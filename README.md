@@ -23,8 +23,6 @@
 
 2. Properly link your CSS and JS files(They should be in an asset folder)
 
-3. If you are working with someone else on a page(e.g payment page) properly integrate all pages into one before you make a PR :unamused:
-   you can still keep your single page on your repo as evidence and for submission.
    
 <hr>
 
