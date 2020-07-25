@@ -22,26 +22,26 @@
                 <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
                   <ul class="navbar-nav font-weight-bold">
                     <li class="nav-item active">
-                      <a class="nav-link px-4 color-blue" href="#">Home</a>
+                      <a class="nav-link px-4 color-blue" href="#home">Home</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link px-4" href="#">Why Us</a>
+                      <a class="nav-link px-4" href="#why">Why Us</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link px-4" href="#">Product</a>
+                      <a class="nav-link px-4" href="#product">Product</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link px-4" href="#">Sign-In</a>
+                        <a class="nav-link px-4" href="/login">Sign-In</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link pl-4 py-0" href="#"><button class="btn bg-color-blue">Hire Me</button></a>
+                        <a class="nav-link pl-4 py-0" href="/login"><button class="btn bg-color-blue">Get Started</button></a>
                       </li>
                   </ul>
                 </div>
             </div>
           </nav>
 
-        <div class="d-lg-flex py-5">
+        <div id="home"class="d-lg-flex py-5">
             <div class="col-12 col-lg-6">
                 <div class="col-12 animate__animated animate__slow-3s animate__flipInX">
                     <div class="fs-32-44 font-weight-bold text-center text-lg-left">Are you ready to unlock the power of being an <span class="color-blue">Advertiser</span> or a <span class="color-blue">Publisher</span>?</div>
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div class="d-lg-flex">
+        <div id="why" class="d-lg-flex">
             <div class="col-12 col-lg-6 d-flex align-items-center">
                 <div>
                     <h1 class="font-weight-bold text-center text-lg-left">Why <span class="color-blue">Choose Us?</span></h1>
@@ -144,16 +144,16 @@
     </div>
 
 
-    <div class="container my-5">
+    <div id="product" class="container my-5">
         <div class="fs-32-44 font-weight-bold pb-4 text-center text-lg-left">
             How it <span class="color-blue">Works</span>
         </div>
         
         <div>
             <div class="container-fluid px-0">
-                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="2000">
                     <div class="carousel-inner row ml-1 w-100 h-220 align-items-center justify-content-center justify-content-md-between" role="listbox">
-                        <div class="carousel-item active px-0 card work col-md-3 py-3 shadow-sm">
+                        <div id="0" class="carousel-item active px-0 card work col-md-3 py-3 shadow-sm" onclick="handleClick(this)">
                             <div class="text-center">
                                 <div>
                                     <img class="w-60px my-3" src="images/search.png" alt="">
@@ -162,7 +162,7 @@
                             </div>
                             <div class="arrow-down"></div>
                         </div>
-                        <div class="carousel-item px-0 card work col-md-3 py-3 shadow-sm">
+                        <div id="1" class="carousel-item px-0 card work col-md-3 py-3 shadow-sm" onclick="handleClick(this)">
                             <div class="text-center">
                                 <div>
                                     <img class="w-60px my-3" src="images/campaign.png" alt="">
@@ -171,7 +171,7 @@
                             </div>
                             <div class="arrow-down"></div>
                         </div>
-                        <div class="carousel-item px-0 card work col-md-3 py-3 shadow-sm">
+                        <div id="2" class="carousel-item px-0 card work col-md-3 py-3 shadow-sm" onclick="handleClick(this)">
                             <div class="text-center">
                                 <div>
                                     <img class="w-60px my-3" src="images/task.png" alt="">
@@ -180,7 +180,7 @@
                             </div>
                             <div class="arrow-down"></div>
                         </div>
-                        <div class="carousel-item px-0 card work col-md-3 py-3 shadow-sm">
+                        <div id="3" class="carousel-item px-0 card work col-md-3 py-3 shadow-sm" onclick="handleClick(this)">
                             <div class="text-center">
                                 <div>
                                     <img class="w-60px my-3" src="images/analytics.png" alt="">
@@ -203,25 +203,27 @@
                 </div>
             </div>
         </div>
-        <div class="d-md-flex my-4 bg-grey-light h-320">
-            <div class="col-12 col-md-6 d-flex align-items-center py-5">
-                <div class="pl-3">
-                    <div class="fs-32 font-weight-bold text-center text-lg-left">
-                        Create an account
-                    </div>
-                    <div>
-                        The first step to get you started is to create an account. On the event of 
-                        doing this, the user has the option of registering as an Advertiser or
-                        as a Publisher. The user can always switch account type at freewill.
+        <div id="carousel-details">
+            <div class="d-md-flex my-4 bg-grey-light h-320">
+                <div class="col-12 col-md-6 d-flex align-items-center py-5">
+                    <div class="pl-3">
+                        <div class="fs-32 font-weight-bold text-center text-lg-left">
+                            Create an account
+                        </div>
+                        <div>
+                            The first step to get you started is to create an account. On the event of 
+                            doing this, the user has the option of registering as an Advertiser or
+                            as a Publisher. The user can always switch account type at freewill.
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 position-relative">
-                <div class="">
-                    <img class="works-img" src="images/device.png" alt="">
-                </div>
-                <div class="">
-                    <img class="works-img2" src="images/device-2.png" alt="">
+                <div class="col-12 col-md-6 position-relative">
+                    <div class="">
+                        <img class="works-img" src="images/device.png" alt="">
+                    </div>
+                    <div class="">
+                        <img class="works-img2" src="images/device-2.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -333,24 +335,133 @@
 <script>
     $('#carouselExample').on('slide.bs.carousel', function (e) {
 
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 4;
-    var totalItems = $('.carousel-item').length;
+        var $e = $(e.relatedTarget);
+        var idx = $e.index();
+        var itemsPerSlide = 4;
+        var totalItems = $('.carousel-item').length;
 
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i=0; i<it; i++) {
-            // append slides to end
-            if (e.direction=="left") {
-                $('.carousel-item').eq(i).appendTo('.carousel-inner');
-            }
-            else {
-                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+        $('#carousel-details')[0].innerHTML = templates[e.to];
+    });
+
+    function handleClick(item) {
+        let children = item.parentNode.children
+        // console.log(children)
+        for(let i=0; i<children.length; i++){
+            if(children[i] == item){
+                item.classList.add("active");
+                $('#carousel-details')[0].innerHTML = templates[item.id];
+            }else{
+                children[i].classList.remove("active")
             }
         }
     }
-    });
+
+    var templates = [
+        [
+            `
+            <div class="d-md-flex my-4 bg-grey-light h-320">
+                <div class="col-12 col-md-6 d-flex align-items-center py-5">
+                    <div class="pl-3">
+                        <div class="fs-32 font-weight-bold text-center text-lg-left">
+                            Create an account
+                        </div>
+                        <div>
+                            The first step to get you started is to create an account. On the event of 
+                            doing this, the user has the option of registering as an Advertiser or
+                            as a Publisher. The user can always switch account type at freewill.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 position-relative">
+                    <div class="">
+                        <img class="works-img" src="images/device.png" alt="">
+                    </div>
+                    <div class="">
+                        <img class="works-img2" src="images/device-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            `
+        ],
+        [
+            `
+            <div class="d-md-flex my-4 bg-grey-light h-320">
+                <div class="col-12 col-md-6 d-flex align-items-center py-5">
+                    <div class="pl-3">
+                        <div class="fs-32 font-weight-bold text-center text-lg-left">
+                            Select a campaign
+                        </div>
+                        <div>
+                            The first step to get you started is to create an account. On the event of 
+                            doing this, the user has the option of registering as an Advertiser or
+                            as a Publisher. The user can always switch account type at freewill.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 position-relative">
+                    <div class="">
+                        <img class="works-img" src="images/device.png" alt="">
+                    </div>
+                    <div class="">
+                        <img class="works-img2" src="images/device-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            `
+        ],
+        [
+            `
+            <div class="d-md-flex my-4 bg-grey-light h-320">
+                <div class="col-12 col-md-6 d-flex align-items-center py-5">
+                    <div class="pl-3">
+                        <div class="fs-32 font-weight-bold text-center text-lg-left">
+                            Choose a Task
+                        </div>
+                        <div>
+                            The first step to get you started is to create an account. On the event of 
+                            doing this, the user has the option of registering as an Advertiser or
+                            as a Publisher. The user can always switch account type at freewill.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 position-relative">
+                    <div class="">
+                        <img class="works-img" src="images/device.png" alt="">
+                    </div>
+                    <div class="">
+                        <img class="works-img2" src="images/device-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            `
+        ],
+        [
+            `
+            <div class="d-md-flex my-4 bg-grey-light h-320">
+                <div class="col-12 col-md-6 d-flex align-items-center py-5">
+                    <div class="pl-3">
+                        <div class="fs-32 font-weight-bold text-center text-lg-left">
+                            Track your goals
+                        </div>
+                        <div>
+                            The first step to get you started is to create an account. On the event of 
+                            doing this, the user has the option of registering as an Advertiser or
+                            as a Publisher. The user can always switch account type at freewill.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 position-relative">
+                    <div class="">
+                        <img class="works-img" src="images/device.png" alt="">
+                    </div>
+                    <div class="">
+                        <img class="works-img2" src="images/device-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            `
+        ],
+    ];
 </script>
 </body>
 </html>
