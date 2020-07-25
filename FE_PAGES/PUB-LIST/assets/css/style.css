@@ -1,0 +1,251 @@
+/** ROOT STYLES **/
+:root
+	{
+		--accentColor:	#0075FF;
+		--accentColor2: #219653;
+		--accentColor3: #FF8801;
+		--cardFooterColor: rgba(58, 58, 58, 0.5);
+	}
+
+/** UNIVERSAL STYLE **/
+*
+	{
+		margin: 0;
+		box-sizing: border-box;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		color: #3A3A3A;
+	}
+
+/** MAIN BODY AND GENERAL ELEMENTS STYLING **/
+	body, .main-content .header
+		{
+			background-color: #F5F6FA;
+		}
+
+	.accentColor, .accentColor .page-link
+		{
+			color: var(--accentColor);
+		}
+
+	.section-title, .view-publisher
+		{
+			font-size: 2rem;
+			line-height: 2rem;
+		}
+
+	a:hover
+		{
+			text-decoration: none;
+		}
+
+/** HEADER AREA **/
+	/*.page-title
+		{
+			font-size: 20px;
+			line-height: 42px;
+			letter-spacing: 0.1px;
+			border-bottom: 4px solid #0075FF;
+			width: fit-content;
+		}*/
+
+	.top-search
+		{
+			background: transparent;
+			background-image: url('../images/search.svg');
+		    background-position: 97% 50%;
+		    background-repeat: no-repeat;
+		    width: 100%;
+		    padding: 13px 29px;
+			border-radius: 59px;
+			border: 1.5px solid #BDBDBD;
+		}
+
+	.top-search::placeholder
+		{
+		    font-family: 'Poppins', sans-serif;
+		    font-size: 13px;
+		    line-height: 19px;
+		    color: #E0E0E0;
+		    font-style: italic;
+		}
+
+	.user-name
+		{
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 42px;
+			letter-spacing: 0.1px;
+			color: #333333;
+		}
+
+	.user-name::after
+		{
+			content: '\25bc';
+			font-size: 12px;
+		    margin-left: 10px;
+		}
+
+/** TOP CATEGORIES STYLES **/
+	.pub-card-social-icon
+		{
+			background: rgba(0, 0, 0, 0.5);
+			width: 64px;
+			height: 64px;
+			top: 16px;
+			left: 16px;
+			box-shadow: 0 20px 11px -10px rgba(0, 0, 0, 0.5);
+		}
+
+	.category-card
+		{
+			mix-blend-mode: multiply;
+			border-radius: 10px;
+		}
+
+	.category-one
+		{
+			background: #E13060;
+		}
+
+	.category-two
+		{
+			background: #00ACEE;
+		}
+
+	.category-three
+		{
+			background: #3B5998;
+		}
+
+	.category-four
+		{
+			background: #334CD0;
+		}
+
+	.category-five
+		{
+			background: #C4302B;
+		}
+
+	.category-six
+		{
+			background: #209653;
+		}
+
+/** Card Styling **/
+	.card
+		{
+		    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+		}
+
+	.card-title
+		{
+			font-size: 22px;
+			line-height: 28px;
+		}
+
+	.card-text
+		{
+			font-size: 18px;
+			line-height: 27px;
+			color: rgba(58, 58, 58, 0.7);
+		}
+
+	.vvip
+		{
+			right: 0;
+			background-color: var(--accentColor2);
+		}
+
+	.card-social-icon
+		{
+			background: rgba(0, 0, 0, 0.5);
+			width: 55px;
+			height: 55px;
+			bottom: 45%;
+			left: 5%;
+		}
+
+	.card-svg 
+		{
+			fill: white;
+		}
+
+	.icon-two
+		{
+			left: 25%;
+		}
+
+	.icon-three
+		{
+			left: 45%;
+		}
+
+	.card-footer-number
+		{
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+	.card-footer-text
+		{
+			font-size: 14.3158px;
+			line-height: 18px;
+			color: var(--cardFooterColor);
+		}
+
+	.bi-bookmark-fill
+		{
+			fill: var(--accentColor3);
+		}
+
+	@media only screen and (min-width: 992px) and (max-width: 1092px)
+		{
+			.card-social-icon
+				{
+					bottom: 59%;
+				}
+		}
+
+	@media only screen and (min-width: 1093px) and (max-width: 1130px)
+		{
+			.card-social-icon
+				{
+					top: 35%;
+				}
+		}
+
+	@media only screen and (min-width: 1131px) and (max-width: 1214px)
+		{
+			.card-social-icon
+				{
+					top: 38%;
+				}
+		}
+
+	@media only screen and (min-width: 1215px) and (max-width: 1315px)
+		{
+			.card-social-icon
+				{
+					top: 41%;
+				}
+		}
+
+	@media only screen and (max-width: 360px)
+		{
+			.card-social-icon
+				{
+					top: 165px;
+				}
+		}
+
+/** PAGINATION STYLES **/
+	.accentColor .page-link:hover
+		{
+			background-color: var(--accentColor);
+			color: white;
+		}
