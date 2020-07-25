@@ -1,0 +1,415 @@
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  // font-size: 62.5%; //This makes 1 rem = 10px; 10/16 * 100 = 62.5%
+}
+
+body {
+  font-family: var(--main-font);
+  
+  // justify-content: flex-start;
+  // align-items: stretch;
+}
+
+/* Variables */
+
+:root {
+  --main-font: 'Source Sans Pro', sans-serif;
+  --primary-color: #0075FF;
+  --hover-color: #4070FF;
+  --hover-shadow: 1px 16px 32px rgba(64, 112, 255, 0.1);
+  --inactive-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+// Main
+
+.main {
+  width: 100%;
+  background-color: #F0F7FF;
+  margin-top: 30px;
+  
+}
+.main-content-1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+
+}
+
+.info {
+  width: 446px;
+  height: 475px;
+  margin-top: 20px;
+  // margin-left: 40px;
+  
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    
+
+    &-heading {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.2px;
+      color: #333;
+
+    }
+
+    .edit-btn {
+      border: 0;
+      font-size: 16px;
+      color: #333;
+      background-color: transparent
+    }
+
+  }
+  
+  &-box {
+    padding: 25px 15px;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: #fff;
+
+    &-text {
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 0.2px;
+      color: #333;
+
+      .name, .email {
+        display: flex;
+
+        & p:nth-child(2) {
+          margin-left: 150px;
+        }
+      }
+
+      .email-color {
+        color: #0075FF;
+      }
+
+      .phone {
+        display: flex;
+
+        & p:nth-child(2) {
+          margin-left: 70px;
+        }
+      }
+      .job {
+        display: flex;
+
+        & p:nth-child(2) {
+          margin-left: 120px;
+        }
+      }
+      .company {
+        display: flex;
+
+        & p:nth-child(2) {
+          margin-left: 120px;
+        }
+      }
+    }
+  }
+
+  
+}
+
+.campaign {
+  width: 524px;
+  margin-top: 20px;
+
+  &-top-heading {
+    @extend .info-top-heading;
+  }
+
+  &-box {
+    padding: 25px 15px;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: #fff;
+  }
+
+  & input[type=checkbox] {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 22px;
+    height: 22px;
+  }
+
+  & label {
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    line-height: 42px;
+    letter-spacing: 0.1px;
+    color: #333333;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+
+  &-check-1,
+  &-check-2,
+  &-check-3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+    .campaign-btn {
+      padding: 14px 50px;
+      color: #fff;
+      font-size: 20px;
+      font-family: var(--main-font);
+      letter-spacing: 0.2px;
+      background-color: #0075FF;
+      border-radius: 5px;
+      border: none;
+      box-shadow: var(--inactive-shadow);
+
+      &:hover {
+        background-color: #0052B3;
+        box-shadow: var(--hover-shadow);
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}
+
+.main-content-2 {
+  margin: 60px 40px 60px 0;
+}
+
+.profile {
+  width: 446px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+
+    &-heading {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.2px;
+      color: #333;
+
+    }
+
+    .manage-btn {
+      border: 0;
+      font-size: 16px;
+      color: #333;
+      background-color: transparent
+    }
+
+  }
+  
+  &-box {
+    padding: 25px 15px;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: #fff;
+
+    
+  }
+
+  &-link {
+    font-size: 18px;
+    line-height: 32px;
+    color: #0075FF;
+    letter-spacing: 0.2px;
+    margin-left: 15px;
+  }
+}
+
+.tags {
+  width: 446px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+
+    &-heading {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.2px;
+      color: #333;
+
+    }
+
+    .edit-btn {
+      border: 0;
+      font-size: 16px;
+      color: #333;
+      background-color: transparent
+    }
+
+  }
+  
+  &-box {
+    padding: 25px 15px;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: #fff;
+
+    &-1 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-2 {
+      display: flex;
+      margin-top: 10px;
+      
+
+    }
+  }
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.56);
+    padding: 10px 7px;
+
+    &-text {
+      font-family: var(--main-font);
+      font-size: 14px;
+      line-height: 10px;
+      letter-spacing: 0.2px;
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 0;
+    }
+
+    &-btn {
+      margin-left: 5px;
+      background-color: transparent;
+      border: none;
+      font-family: var(--main-font);
+      font-size: 14px;
+      line-height: 10px;
+      letter-spacing: 0.2px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .e-commerce {
+    margin-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .info {
+    margin-left: 0;
+  }
+
+  .main-content-2 {
+    margin: 20px 0;
+  }
+
+  .campaign {
+    margin-top: 60px;
+  }
+
+  .profile,.tags {
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+ 
+  .info,
+  .campaign,
+  .profile,
+  .tags {
+    width: 100%;
+    height: 100%;
+
+    &-top-heading {
+      font-size: 16px;
+    }
+
+    &-box-text {
+      font-size: 14px;
+    }
+  }
+  
+  .campaign {
+    margin-top: 20px;
+  }
+  .campaign label {
+    font-size: 16px;
+  }
+
+  .campaign-btn {
+    font-size: 16px !important;
+    padding: 10px 30px !important;
+  }
+
+  .edit-btn {
+    font-size: 12px !important;
+  }
+
+  .manage-btn {
+    font-size: 12px !important;
+  }
+
+  .profile-link {
+    font-size: 14px;
+  }
+
+  .name,.email,.phone,.job,.company {
+    flex-direction: column;
+
+    & p:nth-child(2) {
+      margin-left: 0!important;
+    }
+
+    & p:nth-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  .tags-box-1 {
+    flex-wrap: wrap;
+
+    .tags-item {
+      margin-top: 1rem;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+  .profile-link {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
