@@ -8,6 +8,10 @@ aside a:hover {
     text-decoration: none;
 }
 
+.header__link-list-active::after {
+    width: 52px;
+}
+
 header a:hover {
     text-decoration: none;
 }
