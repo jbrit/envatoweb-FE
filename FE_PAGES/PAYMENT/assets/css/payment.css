@@ -201,15 +201,17 @@ option {
 
 @media (min-width: 980px) and (max-width: 995px) {
     .contaner {
-        margin-left: 0;
+        margin-left: 0px;
     }
 }
 
-@media (min-width: 995px) and (max-width: 1080px) {
+@media (min-width: 991px) and (max-width: 1200px) {
     .contaner {
-        margin-left: 150px;
+        margin-left: 200px;
         padding: 50px;
-        padding-left: 100px;
+    }
+    header {
+        margin-left: 50px;
     }
     .main-content {
         margin-left: 150px;
@@ -289,7 +291,7 @@ option {
         margin-left: 1%;
     }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 987px) {
     .contaner {
         margin-left: 0;
         padding: 30px;
