@@ -1,0 +1,451 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.contaner {
+    background-color:#F0F7FF;
+    padding: 78px;
+    margin-left: 250px;
+}
+
+.public {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+p.pub_text {
+    font-weight: 600;
+    font-size: 36px;
+}
+a.header__link {
+    text-decoration: none;
+}
+a.sidebar__link {
+    text-decoration: none;
+}
+
+.header__link-list-active::after {
+    width: 75px;
+}
+
+p.pub_num {
+    font-weight: 600;
+    font-size: 60px;
+}
+span.asterisk {
+    color:#EB5757; 
+    font-size: 20px;
+    font-weight: bold;
+}
+.form .label{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    display: block;
+}
+.input {
+    width: 100%;
+    border: 1px solid #BDBDBD;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 50px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 20px;
+}
+::placeholder {
+    color: #BDBDBD;
+    font-size: 18px;
+    font-weight: lighter;
+}
+select.input {
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #FFFFFF;
+}
+option[value=""][disabled] {
+    display: none;
+}
+select:required:invalid {
+    color: #BDBDBD;
+    font-size: 20px;
+    font-weight: 500;
+}
+option {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+}
+.banks {
+    display: flex;
+    justify-content: space-between;
+}
+.Bank_Name {
+    width: 58%;
+}
+.Account_type {
+    width: 40%;
+    position: relative;
+}
+.Account_type::after {
+    content: "\25bc";
+    position: absolute;
+    right: 25px;
+    top: 63px;
+    color: #333333;
+}
+.cd_deets {
+    display: flex;
+    justify-content: space-between;
+}
+.card_number {
+    width: 40%;
+}
+.expiry_date {
+    width: 47%;
+    margin-left: 3%;
+}
+.CVV {
+    width: 47%;
+}
+.personal_deets {
+    display: flex;
+    justify-content: space-between;
+}
+.upper_form {
+    background-color: #FFFFFF;
+    padding: 70px 60px 50px 60px;
+}
+.tip {
+    font-size: 12px;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.tip .tip_text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #0075FF;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 3px 5px 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tip .tip_text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0075FF transparent transparent transparent;
+}
+  
+.tip:hover .tip_text {
+    visibility: visible;
+}
+.submit {
+    margin-top: 50px;
+    background-color: #0075FF;
+    border: 2px solid #0075FF;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    border-radius: 5px;
+}
+.submit:hover {
+    background-color: #0052B3;
+    border: 2px solid #0052B3;
+    transition: 0.7s all ease-in-out;
+}
+/* Media Queries */
+@media (min-width: 1350px) {
+    .card_number {
+        width: 50%;
+    }
+    .personal_deets {
+        width: 50%;
+    }
+    .tip {
+        margin-left: 1%;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1349px) {
+    .tip {
+        margin-left: 1%;
+    }
+}
+
+
+@media (min-width: 980px) and (max-width: 995px) {
+    .contaner {
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .contaner {
+        margin-left: 200px;
+        padding: 50px;
+    }
+    header {
+        margin-left: 50px;
+    }
+    .main-content {
+        margin-left: 150px;
+    }
+    aside.sidebar {
+        width: 200px;
+    }
+    p.pub_text {
+        font-size: 45px;
+    }
+    p.pub_num {
+        font-size: 50px;
+    }
+    .public {
+        padding: 20px;
+    }
+    .upper_form {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .form .label {
+        font-size: 32px;
+    }
+    .banks {
+        display: block;
+    }
+    ::placeholder {
+        font-size: 25px;
+    }
+    select:required:invalid {
+        font-size: 25px;
+    }
+    .Bank_Name {
+        width: 100%;
+    }
+    .Account_type {
+        width: 100%; 
+    }
+    .Account_type::after {
+        top: 82px;
+    }
+    .input {
+        font-size: 30px;
+    }
+    .cd_deets {
+        display: block;
+    }
+    .card_number {
+        width: 100%;
+    }
+    span.asterisk {
+        font-size: 30px;
+    }
+    .personal_deets {
+        display: flex;
+        justify-content: space-between;
+    }
+    .expiry_date {
+        width: 48%;
+        margin-left: 0;
+    }
+    .CVV {
+        width: 48%;
+    }
+    .tip {
+        margin-left: 10%;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .tip_text {
+        font-size: 25px;
+    }
+}
+@media (min-width: 980px) and (max-width: 1004px) {
+    .tip {
+        margin-left: 1%;
+    }
+}
+@media (min-width: 768px) and (max-width: 987px) {
+    .contaner {
+        margin-left: 0;
+        padding: 30px;
+    }
+    p.pub_text {
+        font-size: 35px;
+    }
+    p.pub_num {
+        font-size: 40px;
+    }
+    .public {
+        padding: 10px;
+    }
+    .upper_form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form .label {
+        font-size: 25px;
+    }
+    .banks {
+        display: block;
+    }
+    ::placeholder {
+        font-size: 20px;
+    }
+    .Bank_Name {
+        width: 100%;
+    }
+    .Account_type {
+        width: 100%; 
+    }
+    .Account_type::after {
+        top: 65px;
+    }
+    header.d-lg-none {
+        margin-left: 0;
+    }
+    .input {
+        font-size: 23px;
+    }
+    .cd_deets {
+        display: block;
+    }
+    .card_number {
+        width: 100%;
+    }
+    .personal_deets {
+        display: flex;
+        justify-content: space-between;
+    }
+    .expiry_date {
+        width: 48%;
+        margin-left: 0;
+    }
+    .CVV {
+        width: 48%;
+    }
+    .tip {
+        margin-left: 35%;
+        font-size: 18px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .tip_text {
+        font-size: 20px;
+    }
+}
+@media (max-width: 765px) {
+    .contaner {
+        margin-left: 0;
+        padding: 20px;
+    }
+    p.pub_text {
+        font-size: 25px;
+    }
+    p.pub_num {
+        font-size: 30px;
+    }
+    .public {
+        padding: 0;
+    }
+    .upper_form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .form .label {
+        font-size: 21px;
+    }
+    .banks {
+        display: block;
+    }
+    .Bank_Name {
+        width: 100%;
+    }
+    .Account_type {
+        width: 100%; 
+    }
+    .Account_type::after {
+        top: 58px;
+    }
+    .input {
+        font-size: 18px;
+    }
+    .cd_deets {
+        display: block;
+    }
+    .card_number {
+        width: 100%;
+    }
+    header.d-lg-none {
+        margin-left: 0;
+    }
+    .personal_deets {
+        display: block;
+        justify-content: space-between;
+    }
+    .expiry_date {
+        width: 100%;
+        margin-left: 0;
+    }
+    .CVV {
+        width: 100%;
+    }
+    .tip {
+        margin-left: 40%;
+    }
+    .tip_text {
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 330px) {
+    .tip {
+        margin-left: 30%;
+    }
+    p.pub_text {
+        font-size: 21px;
+    }
+    p.pub_num {
+        font-size: 26px;
+    }
+}
+@media (max-width: 280px) {
+    .contaner {
+        padding: 10px;
+    }
+    p.pub_text {
+        font-size: 20px;
+    }
+    p.pub_num {
+        font-size: 25px;
+    }
+    .tip {
+        margin-left: 24%;
+    }
+}

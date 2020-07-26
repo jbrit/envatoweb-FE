@@ -1,0 +1,434 @@
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+/* Variables */
+:root {
+  --main-font: 'Source Sans Pro', sans-serif;
+  --primary-color: #0075FF;
+  --hover-color: #4070FF;
+  --hover-shadow: 1px 16px 32px rgba(64, 112, 255, 0.1);
+  --inactive-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+  width: 100%;
+  background-color: #F0F7FF;
+  margin-top: 30px;
+}
+
+.main-content-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info {
+  width: 446px;
+  height: 475px;
+  margin-top: 20px;
+}
+
+.info-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-top-heading, .campaign-top-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #333;
+}
+
+.info-top .edit-btn {
+  border: 0;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+}
+
+.info-box {
+  padding: 25px 15px;
+  -webkit-box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.info-box-text {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #333;
+}
+
+.info-box-text .name, .info-box-text .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-box-text .name p:nth-child(2), .info-box-text .email p:nth-child(2) {
+  margin-left: 150px;
+}
+
+.info-box-text .email-color {
+  color: #0075FF;
+}
+
+.info-box-text .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-box-text .phone p:nth-child(2) {
+  margin-left: 70px;
+}
+
+.info-box-text .job {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-box-text .job p:nth-child(2) {
+  margin-left: 120px;
+}
+
+.info-box-text .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-box-text .company p:nth-child(2) {
+  margin-left: 120px;
+}
+
+.campaign {
+  width: 524px;
+  margin-top: 20px;
+}
+
+.campaign-box {
+  padding: 25px 15px;
+  -webkit-box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.campaign input[type=checkbox] {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 22px;
+  height: 22px;
+}
+
+.campaign label {
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  line-height: 42px;
+  letter-spacing: 0.1px;
+  color: #333333;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.campaign-check-1, .campaign-check-2, .campaign-check-3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.campaign-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+
+.campaign-btn-container .campaign-btn {
+  padding: 14px 50px;
+  color: #fff;
+  font-size: 20px;
+  font-family: var(--main-font);
+  letter-spacing: 0.2px;
+  background-color: #0075FF;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: var(--inactive-shadow);
+          box-shadow: var(--inactive-shadow);
+}
+
+.campaign-btn-container .campaign-btn:hover {
+  background-color: #0052B3;
+  -webkit-box-shadow: var(--hover-shadow);
+          box-shadow: var(--hover-shadow);
+}
+
+.campaign-btn-container .campaign-btn:focus {
+  outline: 0;
+}
+
+.main-content-2 {
+  margin: 60px 40px 60px 0;
+}
+
+.profile {
+  width: 446px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.profile-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile-top-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #333;
+}
+
+.profile-top .manage-btn {
+  border: 0;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+}
+
+.profile-box {
+  padding: 25px 15px;
+  -webkit-box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.profile-link {
+  font-size: 18px;
+  line-height: 32px;
+  color: #0075FF;
+  letter-spacing: 0.2px;
+  margin-left: 15px;
+}
+
+.tags {
+  width: 446px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.tags-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tags-top-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #333;
+}
+
+.tags-top .edit-btn {
+  border: 0;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+}
+
+.tags-box {
+  padding: 25px 15px;
+  -webkit-box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.tags-box-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tags-box-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.tags-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(196, 196, 196, 0.56);
+  padding: 10px 7px;
+}
+
+.tags-item-text {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 0.2px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+}
+
+.tags-item-btn {
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 0.2px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.tags .e-commerce {
+  margin-left: 12px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .info {
+    margin-left: 0;
+  }
+  .main-content-2 {
+    margin: 20px 0;
+  }
+  .campaign {
+    margin-top: 60px;
+  }
+  .profile, .tags {
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .info,
+  .campaign,
+  .profile,
+  .tags {
+    width: 100%;
+    height: 100%;
+  }
+  .info-top-heading, .campaign-top-heading,
+  .campaign-top-heading,
+  .profile-top-heading,
+  .tags-top-heading {
+    font-size: 16px;
+  }
+  .info-box-text,
+  .campaign-box-text,
+  .profile-box-text,
+  .tags-box-text {
+    font-size: 14px;
+  }
+  .campaign {
+    margin-top: 20px;
+  }
+  .campaign label {
+    font-size: 16px;
+  }
+  .campaign-btn {
+    font-size: 16px !important;
+    padding: 10px 30px !important;
+  }
+  .edit-btn {
+    font-size: 12px !important;
+  }
+  .manage-btn {
+    font-size: 12px !important;
+  }
+  .profile-link {
+    font-size: 14px;
+  }
+  .name, .email, .phone, .job, .company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .name p:nth-child(2), .email p:nth-child(2), .phone p:nth-child(2), .job p:nth-child(2), .company p:nth-child(2) {
+    margin-left: 0 !important;
+  }
+  .name p:nth-child(1), .email p:nth-child(1), .phone p:nth-child(1), .job p:nth-child(1), .company p:nth-child(1) {
+    margin-bottom: 0;
+  }
+  .tags-box-1 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tags-box-1 .tags-item {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .profile-link {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-font: 'Source Sans Pro', sans-serif;
+  --button-font: 'Inter', sans-serif;
+  --white-color: #fff;
+  --title-color: #4f4f4f;
+  --text-color: #828282;
+  --blue-color: #0075FF;
+  --hover: #0052B3;
+  --border-color: #CECECE;
+}
+
+/* main content */
+
+.content {
+  height: 100vh;
+
+}
+
+.section-wrap {
+  background-image: url(../images/Ellipse1.svg), url(../images/Ellipse2.svg), url(../images/polygon.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: left 10% top -1%, left -1% bottom -3%, right -13% top -5%;
+  background-size: 56%, 42%, 52%;
+  background-attachment: fixed;
+  min-height: 100vh;
+
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+/* Writeup section */
+.appr-text {
+  font-size: 2rem;
+  font-family: var(--text-font);
+  line-height: 59px;
+  color: var(--title-color);
+
+}
+
+.appr-p {
+  font-family: var(--text-font);
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 41px;
+  color: var(--text-color);
+}
+
+/* Table section starts here */
+
+.adv-tex {
+  font-family: var(--text-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 33px;
+  letter-spacing: 0.001em;
+  color: var(--title-color);
+}
+
+.table {
+  box-shadow: 0.520398px 1.0408px 10.408px rgba(0, 0, 0, 0.1);
+  background: var(--white-color);
+}
+
+.table2 {
+  box-shadow: 0.492292px 0.984584px 9.84584px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.btn-advert {
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  width: 203.48px;
+  height: 66.61px;
+  border-radius: 4.5647px;
+  transition: all .3s linear;
+  font-family: var(--button-font);
+  font-weight: 500;
+  font-size: 0.876rem;
+  line-height: 17px;
+}
+
+.btn:hover {
+  background: var(--hover);
+  color: var(--white-color);
+}
+
+.btn:active,
+.btn:hover {
+  outline: 0;
+  box-shadow: none;
+}
+
+.pp-2 {
+  padding: 2rem !important;
+}
+
+
+.mbb-5 {
+  margin-bottom: 7.2rem !important;
+}
+
+tbody {
+  border-top-style: hidden;
+}
+
+.arrow {
+  font-size: 1.6rem;
+}
