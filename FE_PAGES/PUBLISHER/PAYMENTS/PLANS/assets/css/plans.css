@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0075FF;
+    --secondary-color: #BDBDBD;
+    --aux-color: #FFFFFF;
+    --main-color: #F0F7FF;
+    --text-color: #EB5757;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background: var(--main-color);
+    font-family: 'Source Sans Pro',
+        sans-serif !important;
+}
+
+aside a:hover {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+.header__link-list-active::after {
+    width: 45px;
+}
+
+
+.pricing {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.card-deck .card {
+    border-radius: 10px !important;
+}
+
+.card-deck .card-header {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0.5em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.card p {
+    padding: 1em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 156%;
+}
+
+.card span {
+    padding-right: 1em;
+    top: 120;
+}
+
+.card .standard {
+    background: #2D9CDB;
+}
+
+.card .enterprise {
+    background: #F2994A;
+}
+
+.card .card-title {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.price-card-title {
+    font-size: 40px;
+}
+
+.card .choose {
+    width: 140px;
+    height: 38px;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .card .choose {
+       width: 300px;
+       height: 55px;
+       padding-top: 0.8em;
+       margin-bottom: 8px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .card .choose {
+        width: 220px;
+        height: 50px;
+        padding-top: 0.5em;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 1199.98px) { 
+
+    .main-body {
+        margin-left: 200px;
+        padding-right: 40px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+
+    .main-body {
+        margin-left: 150px;
+        padding-right: 30px;
+    }
+    
+}
