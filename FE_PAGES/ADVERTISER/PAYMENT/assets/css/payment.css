@@ -8,19 +8,6 @@ body {
     padding: 78px;
     margin-left: 250px;
 }
-
-.public {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-p.pub_text {
-    font-weight: 600;
-    font-size: 36px;
-}
 a.header__link {
     text-decoration: none;
 }
