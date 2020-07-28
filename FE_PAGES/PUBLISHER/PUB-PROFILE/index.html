@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publisher Profile | Webapp</title>
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP V4.5  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- GOOGLE FONT  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body>
+    <aside class="sidebar position-fixed d-none d-lg-block h-100 position-relative">
+        <!-- <a href="#"><img class="logo text-center" src="./asset/img/Webapp.png" alt="" srcset=""></a>    -->
+        <ul class="sidebar__lists list-unstyled">
+           <a class="my-4 sidebar__link sidebar__link-active" href="#">
+              <li class="pl-2 pl-xl-5 py-2 my-3 d-flex align-items-center sidebar__list"><span class="sidebar__icon"><img class="img-fluid pr-3" src="./asset/img/Dashboard Icon.png" alt=""></span>Dashboard</li>
+           </a>
+           <a class="my-4 sidebar__link" href="#">
+              <li class="pl-2 pl-xl-5 py-2 my-3 d-flex align-items-center sidebar__list"><span class="sidebar__icon"><img class="img-fluid pr-3" src="./asset/img/publisher list.svg" alt=""></span>Publisher List</li>
+           </a>
+           <a class="my-4 sidebar__link" href="#">
+              <li class="pl-2 pl-xl-5 py-2 my-3 d-flex align-items-center sidebar__list"><span class="sidebar__icon"><img class="img-fluid pr-3" src="./asset/img/wallet.svg" alt=""></span>Wallet</li>
+           </a>
+           <a class="my-4 sidebar__link" href="#">
+              <li class="pl-2 pl-xl-5 py-2 my-3 d-flex align-items-center sidebar__list  sidebar__list-active"><span class="sidebar__icon"><img class="img-fluid pr-3" src="./asset/img/Vector.png" alt=""></span>Account</li>
+           </a>
+        </ul>
+        <a class="sidebar__link" href="#">
+          <li class="pl-2 pl-xl-5 py-2 my-3 d-flex align-items-center position-absolute sidebar__sign-out"><span class="sidebar__icon"><img class="img-fluid pr-3" src="./asset/img/log-out.svg" alt=""></span>Sign out</li>
+       </a>
+    </aside>
+    <main class="main-content">
+        <!-- Small screens -->
+        <header class="d-lg-none">
+            <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand pl-3 pl-sm-0" href="#"><img class="img-fluid" src="./asset/img/Webapp.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="container">
+                    <div class="row">
+                        <ul class="navbar-nav ml-auto pl-3 pl-sm-0">
+                        <li class="nav-item d-flex align-items-center">
+                        <img class="mr-2" src="./asset/img/dashboard icon mobile.svg" alt="dashboard icon mobile">
+                        <a class="nav-link" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                        <img class="mr-2" src="./asset/img/publisher list mobile.svg" alt="publisher list icon mobile">
+                        <a class="nav-link" href="#">Publisher list</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                        <img class="mr-2" src="./asset/img/wallet mobile.svg" alt="wallet icon mobile">
+                        <a class="nav-link" href="#">Wallet</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                        <img class="mr-2" src="./asset/img/account icon mobile.svg" alt="account icon mobile">
+                        <a class="nav-link" href="#">Account</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                        <img class="mr-2" src="./asset/img/sign-out mobile.svg" alt="sign out icon mobile">
+                        <a class="nav-link" href="#">Sign Out</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </nav>
+            <div class="container py-3">
+            <form class="header-form position-relative mx-auto">
+                <input class="header-form__input form-control px-3 py-2" type="text" placeholder="Search payment history">
+                <div class="header-form__icon position-absolute">
+                    <img src="./asset/img/search icon.svg" alt="">
+                </div>
+            </form>
+            </div>
+        </header>
+        <!-- Big screens -->
+        <header class="header position-relative d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                <div class="col-md-4">      
+                    <ul class="list-unstyled pt-3 d-flex align-items-center justify-content-between">
+                        <li><a class="header__link header__link-active" href="#">Overview</a></li>
+                        <li class="header__link-list-active"><a class="header__link" href="#">Campaigns</a></li>
+                        <li><a class="header__link" href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <form class="header-form position-relative ml-auto">
+                        <input class="header-form__input form-control px-3 py-2" type="text" placeholder="Search payment history">
+                        <div class="header-form__icon position-absolute">
+                            <img src="./asset/img/search icon.svg" alt="">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <img class="img-fluid profile-picture pr-2" src="./asset/img/profile picture.png" alt="">
+                        <div class="dropdown show">
+                            <a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            John Kelvin
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Edit Profile</a>
+                            <a class="dropdown-item" href="#">Sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </header>
+        <section id="user-account">
+            <div class="container">
+                <section class="user-details">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm">
+                            <img src="./asset/img/Ellipse 1.png" alt="" srcset="" class="user-account-img">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm">
+                            <div class="row">
+                                <p class="display-5 user-name">Irish Kelvin</p>
+                            </div>
+                            <div class="row">
+                                <p class="user-role">Social Media Influncer</p>
+                                <div class="user-rating">
+                                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="user-location">
+                                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                                    <p>234 Lake side Melbourne Russia</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="user-tag">
+                                    <a class="btn btn-disable tag">E-commerce</a>
+                                    <a class="btn btn-disable tag">Tech</a>
+                                    <a class="btn btn-disable tag">Health</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm">
+                            <div class="row">
+                                <div class="user-contact">
+                                    <p class="user-email">desmondchuks@hmaill.com</p>
+                                    <p class="user-phone">0494 39494 444</p>
+                                    <a href="#" class="btn btn-primary">Edit Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="campaign-history">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm">
+                                <hr>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm">
+                                <h2 class="title-header-primary">Campaign History</h2>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- CAMPAIGN HISTORY  -->
+                <section class="campaign-details">
+                    <div class="row campaign-row">
+                        <div class="col-lg-3 col-md-3 col-sm">
+                            <div class="campaign-card">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm">
+                                        <p class="campaign-title invitations">Invitations</p>
+                                    </div>
+                                    <div class="col span-flex">
+                                        <span class="invitation-value">12</span>
+                                        <a href="#" class="btn">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm row-2">
+                            <div class="campaign-card">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm">
+                                        <p class="campaign-title finished">Finished</p>
+                                    </div>
+                                    <div class="col span-flex">
+                                        <span class="finished-value">64</span>
+                                        <a href="#" class="btn">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm row-3">
+                            <div class="campaign-card">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm">
+                                        <p class="campaign-title accepted">Accepted</p>
+                                    </div>
+                                    <div class="col span-flex">
+                                        <span class="accepted-value">35</span>
+                                        <a href="#" class="btn">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row campaign-row my-5">
+                        <div class="col-lg-3 col-md-3 col-sm">
+                            <div class="campaign-card active-bg">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm">
+                                        <p class="campaign-title active">Active</p>
+                                    </div>
+                                    <div class="col span-flex">
+                                        <span class="active-value">12</span>
+                                        <a href="#" class="btn">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm row-2">
+                            <div class="campaign-card">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm">
+                                        <p class="campaign-title pending">Pending</p>
+                                    </div>
+                                    <div class="col span-flex">
+                                        <span class="pending-value">27</span>
+                                        <a href="#" class="btn">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm row-3">
+                            <div class="campaign-card">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm">
+                                        <p class="campaign-title declined">Declined</p>
+                                    </div>
+                                    <div class="col span-flex">
+                                        <span class="declined-value">2</span>
+                                        <a href="#" class="btn">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="post-feeds">
+                    <div class="row post-feeds-row">
+                        <div class="col-lg-2 col-md-2 col-sm-3">
+                            <img src="./asset/img/image 1.png" alt="" srcset="">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-7">
+                            <h2 class="post-title">Cocacola Promo Video Post</h2>
+                            <div class="row post-date-row">
+                                <div class="col-lg-5 col-md-3 col-sm-6">
+                                    <p>Start Date: <span class="px-3">June 10, 2020</span></p>
+                                </div>
+                                <div class="col-lg-5 col-md-3 col-sm-6">
+                                    <p>End Date: <span class="px-3">August 10, 2020</span></p>
+                                </div>
+                            </div>
+                            <div class="row post-date-row">
+                                <div class="col-lg-5 col-md-3 col-sm-6">
+                                    <p>Impressions: <span class="px-3 pending-color">2,347.444</span></p>
+                                </div>
+                                <div class="col-lg-6 col-md-3 col-sm-6">
+                                    <p>Targeted Impression: <span class="px-3 pending-color">4,000,000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 left-align">
+                              <a href=""><img src="./asset/img/instagram-fill (1) 2.png" alt="" srcset="" class="social-icon"></a>
+                        </div>
+                        <div class="col">
+                            <hr>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">170</span>K</h2>
+                                    <p class="post-feed-title">Total Reach</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">165</span>K</h2>
+                                    <p class="post-feed-title">Total Views</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">125</span>K</h2>
+                                    <p class="post-feed-title">Total Clicks</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">35</span>K</h2>
+                                    <p class="post-feed-title">Engagements</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">35</span>K</h2>
+                                    <p class="post-feed-title">Conversion</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center py-4">
+                                    <i class="fa fa-long-arrow-up accepted-color" aria-hidden="true"></i>
+                                    <h2 class="accepted-color"><span class="value">75</span>%</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row post-feeds-row my-5">
+                        <div class="col-lg-2 col-md-2 col-sm-3">
+                            <img src="./asset/img/image 2.png" alt="" srcset="">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-7">
+                            <h2 class="post-title">Hotels.NG Internship Add Post</h2>
+                            <div class="row post-date-row">
+                                <div class="col-lg-5 col-md-3 col-sm-6">
+                                    <p>Start Date: <span class="px-3">June 10, 2020</span></p>
+                                </div>
+                                <div class="col-lg-5 col-md-3 col-sm-6">
+                                    <p>End Date: <span class="px-3">August 10, 2020</span></p>
+                                </div>
+                            </div>
+                            <div class="row post-date-row">
+                                <div class="col-lg-5 col-md-3 col-sm-6">
+                                    <p>Impressions: <span class="px-3 pending-color">2,347.444</span></p>
+                                </div>
+                                <div class="col-lg-6 col-md-3 col-sm-6">
+                                    <p>Targeted Impression: <span class="px-3 pending-color">4,000,000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 left-align">
+                              <a href=""><img src="./asset/img/Twitter.png" alt="" srcset="" class="social-icon"></a>
+                        </div>
+                        <div class="col">
+                            <hr>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">170</span>K</h2>
+                                    <p class="post-feed-title">Total Reach</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">75</span>K</h2>
+                                    <p class="post-feed-title">Total Views</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">87</span>K</h2>
+                                    <p class="post-feed-title">Total Clicks</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">9</span>K</h2>
+                                    <p class="post-feed-title">Engagements</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">5</span>K</h2>
+                                    <p class="post-feed-title">Conversion</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center py-4">
+                                    <i class="fa fa-long-arrow-up accepted-color" aria-hidden="true"></i>
+                                    <h2 class="accepted-color"><span class="value">75</span>%</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row post-feeds-row my-5">
+                        <div class="col-lg-2 col-md-2 col-sm-3">
+                            <img src="./asset/img/image 2.png" alt="" srcset="">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-7">
+                            <h2 class="post-title">Hotels.NG Internship Add Post</h2>
+                            <div class="row post-date-row">
+                                <div class="col-lg-5 col-md-3 col-sm-6">
+                                    <p>Start Date: <span class="px-3">June 10, 2020</span></p>
+                                </div>
+                                <div class="col-lg-5 col-md-3 col-sm-6">
+                                    <p>End Date: <span class="px-3">August 10, 2020</span></p>
+                                </div>
+                            </div>
+                            <div class="row post-date-row">
+                                <div class="col-lg-5 col-md-3 col-sm-6">
+                                    <p>Impressions: <span class="px-3 pending-color">2,347.444</span></p>
+                                </div>
+                                <div class="col-lg-6 col-md-3 col-sm-6">
+                                    <p>Targeted Impression: <span class="px-3 pending-color">4,000,000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 left-align">
+                              <a href=""><img src="./asset/img/Twitter.png" alt="" srcset="" class="social-icon"></a>
+                        </div>
+                        <div class="col">
+                            <hr>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">170</span>K</h2>
+                                    <p class="post-feed-title">Total Reach</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">165</span>K</h2>
+                                    <p class="post-feed-title">Total Views</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">125</span>K</h2>
+                                    <p class="post-feed-title">Total Clicks</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">35</span>K</h2>
+                                    <p class="post-feed-title">Engagements</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center">
+                                    <h2 class="post-reach-value"><span class="value">35</span>K</h2>
+                                    <p class="post-feed-title">Conversion</p>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm text-center py-4">
+                                    <i class="fa fa-long-arrow-up accepted-color" aria-hidden="true"></i>
+                                    <h2 class="accepted-color"><span class="value">75</span>%</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/1dedf821d9.js"></script>
+</body>
+</html>
