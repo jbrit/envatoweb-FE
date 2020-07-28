@@ -8,16 +8,13 @@
 :root {
   --text-font: 'Source Sans Pro', sans-serif;
   --white-color: #fff;
-  --title-color: #181818;
-  --blackish: #333333;
-  --text-color: #7C7C7C;
+  --title-color: #333333;
+  --text-color: #4f4f4f;
   --blue-color: #0075FF;
   --hover: #0052B3;
   --border-color: #F8F8F8;
   --faint-grey: #D0C9D6;
-  --red-color: #EB5757;
-  --dark-blue: #104B91;
-  ;
+  --bg-color: #D5F5E2;
 }
 
 /* main content */
@@ -30,7 +27,7 @@
 }
 
 .content2 {
-  background: #D5F5E2;
+  background: var(--bg-color);
 }
 
 .section-wrap {
@@ -52,6 +49,30 @@
   background-repeat: no-repeat;
 }
 
+/* left side */
+
+
+
+.left-title {
+  font-family: var(--title-color);
+  font-weight: 600;
+  line-height: 64px;
+  font-size: 1.5rem;
+}
+
+.left-text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 35px;
+  color: var(--text-color);
+}
+
+.mt-16 {
+  margin-top: 10rem;
+}
+
 /* form section */
 .btnn {
 
@@ -66,14 +87,6 @@
   transition: all .3s linear;
 }
 
-.btn-google {
-  background: var(--red-color);
-
-}
-
-.btn-fb {
-  background: var(--dark-blue);
-}
 
 .w-40 {
   width: 100%;
@@ -84,27 +97,6 @@
 
   margin-top: 0.47rem;
 
-}
-
-.form-title {
-  font-size: 2.1rem;
-  font-family: var(--text-font);
-  font-weight: 300;
-  line-height: 64px;
-  letter-spacing: 0.001em;
-
-}
-
-.login-text {
-  line-height: 30px;
-}
-
-.login-text,
-.rem {
-  font-family: var(--text-font);
-  font-weight: normal;
-  font-size: 1rem;
-  color: var(--text-color);
 }
 
 .btn-submit {
@@ -120,19 +112,10 @@
   line-height: 26px;
 }
 
-.social-signin {
-  width: 100%;
-
-}
 
 .btn:hover {
   background: var(--hover);
   color: var(--white-color);
-}
-
-.btn-google:hover {
-  opacity: 0.9;
-  background: var(--red-color);
 }
 
 .btn:active,
@@ -159,7 +142,7 @@
 }
 
 .label {
-  font-family: var(--text-font);
+  font-family: var(--text-color);
   font-weight: normal;
   font-size: 1.125rem;
   color: var(--text-color);
@@ -177,80 +160,7 @@ input:-webkit-autofill:active {
 
 }
 
-.pa-eye {
-  color: var(--faint-grey);
-  cursor: pointer;
-  margin-left: 90%;
-
-}
 
 .form-group {
   position: relative;
-}
-
-.form-group i {
-  position: absolute;
-  top: 60%;
-}
-
-.reset-text {
-  font-family: var(--text-font);
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 24px;
-  color: var(--blue-color);
-}
-
-.sign-up,
-.alt {
-  font-family: var(--text-font);
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 21px;
-  color: var(--text-color);
-
-}
-
-.inner-sign {
-  color: var(--blue-color);
-}
-
-/* right side */
-.title {
-  color: var(--red-color);
-}
-
-.info-icon {
-  font-size: 2rem;
-}
-
-.left-title {
-  font-family: var(--text-font);
-  font-weight: 600;
-  line-height: 64px;
-  text-align: center;
-}
-
-.left-text {
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.75rem;
-  line-height: 35px;
-  color: var(--blackish);
-}
-
-.inner-left-text {
-  color: var(--blue-color);
-}
-
-.signup-btn {
-  color: var(--blue-color);
-  border: 1px solid #0075FF;
-  background: transparent;
-
-}
-
-.mt-17 {
-  margin-top: 17rem;
 }
