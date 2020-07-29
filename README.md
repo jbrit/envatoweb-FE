@@ -23,6 +23,7 @@
 
 2. Properly link your CSS and JS files(They should be in an asset folder)
 3. Your pages should be named according to what you are working on e.g login.html login.css e.t.c
+4. All your CSS files, images and Js files should be placed in the GENERAL ASSETS folder. Only your html file should be on the page folder.
 
    
 <hr>
