@@ -9,76 +9,61 @@
   --text-font: 'Source Sans Pro', sans-serif;
   --white-color: #fff;
   --title-color: #181818;
-  --blackish: #333333;
   --text-color: #7C7C7C;
-  --blue-color: #0075FF;
-  --hover: #0052B3;
+  --purple-color: #362F74;
+  --hover: #2C284F;
   --border-color: #F8F8F8;
   --faint-grey: #D0C9D6;
-  --red-color: #EB5757;
-  --dark-blue: #104B91;
-  ;
+  --hr-color: #CECECE;
 }
-
-/* main content */
-
 
 .content {
+  height: 100vh;
 
-  background: var(--white-color);
-
-}
-
-.content2 {
-  background: #D5F5E2;
 }
 
 .section-wrap {
-  background-image: url(../../images/Ellipse1.svg), url(../../images/Ellipse2.svg);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left 10% top -1%, left -1% bottom -3%, right -13% top -5%;
+  background-image: url(/envatoweb-FE/FE_PAGES/assets/images/Ellipse1.svg), url(/envatoweb-FE/FE_PAGES/assets/images/Ellipse2.svg), url(/envatoweb-FE/FE_PAGES/assets/images/illus.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: left 10% top -1%, left -1% bottom -3%, right -8px top -1px;
   background-size: 56%, 42%, 52%;
-
+  background-attachment: fixed;
   min-height: 100vh;
 
 }
 
-.section-wrap2 {
-  background-image: url(../../images/polygon.svg);
-
-  background-position: right -13% top -5%;
-  background-size: 52%;
-
-  background-repeat: no-repeat;
+.overflow-auto {
+  overflow: auto;
 }
 
-/* form section */
 .btnn {
-
+  background: var(--purple-color);
   color: var(--white-color);
+  font-size: 0.875rem;
   font-weight: 600;
   font-family: var(--text-font);
   padding: 1rem;
-
-}
-
-.btn {
   transition: all .3s linear;
 }
 
-.btn-google {
-  background: var(--red-color);
-
+.btn-media {
+  border: 1.25387px solid var(--purple-color);
+  background: var(--white-color);
+  color: var(--purple-color);
 }
 
-.btn-fb {
-  background: var(--dark-blue);
-}
 
 .w-40 {
   width: 100%;
 }
 
+/* form section */
+
+.form {
+  background: var(--white-color);
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+
+}
 
 .form-check-input {
 
@@ -95,6 +80,18 @@
 
 }
 
+.label {
+  font-family: var(--text-font);
+  font-weight: normal;
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 30px;
+}
+
+a:hover {
+  color: var(--hover);
+}
+
 .login-text {
   line-height: 30px;
 }
@@ -109,9 +106,9 @@
 
 .btn-submit {
   color: var(--white-color);
-  background: var(--blue-color);
+  background: var(--purple-color);
   width: 127.79px;
-  height: 55.05px;
+  height: 50px;
   border-radius: 5px;
   transition: all .3s linear;
   font-family: var(--text-font);
@@ -120,19 +117,17 @@
   line-height: 26px;
 }
 
-.social-signin {
-  width: 100%;
+.btn-icons {
+  margin-top: -4px;
+}
 
+.btn-icon {
+  margin-left: -16px;
 }
 
 .btn:hover {
   background: var(--hover);
   color: var(--white-color);
-}
-
-.btn-google:hover {
-  opacity: 0.9;
-  background: var(--red-color);
 }
 
 .btn:active,
@@ -141,9 +136,14 @@
   box-shadow: none;
 }
 
+.button {
+  width: 100%;
+}
+
+
 .form-control {
   width: 100%;
-  height: 64.47px;
+  height: 50px;
   background: rgba(214, 214, 214, 0.44);
   border: 1.65306px solid var(--border-color);
   border-radius: 8.26531px;
@@ -156,14 +156,6 @@
   outline: 0;
   box-shadow: none;
 
-}
-
-.label {
-  font-family: var(--text-font);
-  font-weight: normal;
-  font-size: 1.125rem;
-  color: var(--text-color);
-  line-height: 30px;
 }
 
 
@@ -190,7 +182,7 @@ input:-webkit-autofill:active {
 
 .form-group i {
   position: absolute;
-  top: 60%;
+  top: 65%;
 }
 
 .reset-text {
@@ -198,7 +190,7 @@ input:-webkit-autofill:active {
   font-weight: 500;
   font-size: 1rem;
   line-height: 24px;
-  color: var(--blue-color);
+  color: var(--purple-color);
 }
 
 .sign-up,
@@ -212,45 +204,38 @@ input:-webkit-autofill:active {
 }
 
 .inner-sign {
-  color: var(--blue-color);
+  color: var(--purple-color);
 }
 
-/* right side */
-.title {
-  color: var(--red-color);
+/* Signup css */
+.section-wrap-signup {
+  background-image: url(/envatoweb-FE/FE_PAGES/assets/images/Ellipse1.svg), url(/envatoweb-FE/FE_PAGES/assets/images/Ellipse2.svg), url(/envatoweb-FE/FE_PAGES/assets/images/illus-signup.svg);
+  background-position: left 10% top -1%, left -1% bottom -3%, right 0% top 0%;
 }
 
-.info-icon {
-  font-size: 2rem;
+.w-40 {
+  width: 100%;
 }
 
-.left-title {
+.division {
+  width: 100%;
+  max-width: 560px;
+}
+
+hr {
+  border: 1px solid var(--hr-color);
+}
+
+.or {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.terms {
   font-family: var(--text-font);
-  font-weight: 600;
-  line-height: 64px;
-  text-align: center;
-}
-
-.left-text {
-  font-family: Source Sans Pro;
-  font-style: normal;
   font-weight: normal;
-  font-size: 1.75rem;
-  line-height: 35px;
-  color: var(--blackish);
-}
-
-.inner-left-text {
-  color: var(--blue-color);
-}
-
-.signup-btn {
-  color: var(--blue-color);
-  border: 1px solid #0075FF;
-  background: transparent;
-
-}
-
-.mt-17 {
-  margin-top: 17rem;
+  font-size: 0.875rem;
+  color: var(--text-color);
+  line-height: 16px;
 }
