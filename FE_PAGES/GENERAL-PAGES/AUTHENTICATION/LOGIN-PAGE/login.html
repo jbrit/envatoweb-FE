@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Optimized viewport for mobile -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Website description -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Website title-->
+    <title>Webapp</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS links-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../../assets/css/bootstrap-css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/custom.css/login-style.css" />
+    <link rel="stylesheet" href="../../../assets/css/custom.css/login-responsive.css" />
+  </head>
+  <body>
+    <!-- main content begins -->
+    <div class="wrapper d-flex">
+      <!-- left section up -->
+      <section class="content col-md-7 col-12 section-wrap px-md-4 pl-md-5">
+        <div class="logo p-4 p-md-5">
+          <img src="../../../assets/images/Webapp.svg" alt="" class="web-logo" />
+        </div>
+        <div class="container px-4 pl-4 pl-md-5">
+          <form class="form mb-5">
+            <h1 class="form-title text-center">
+              Hello, Welcome back
+            </h1>
+            <div
+              class="social-signin d-flex justify-content-lg-between mt-4 flex-column flex-lg-row"
+            >
+              <a
+                href=""
+                class="btn btnn w-40 btn-google d-flex justify-content-center align-items-center h-100 mb-3 my-lg-0"
+              >
+                <span
+                  class="iconify btn-icon btn-icons pr-1"
+                  data-icon="fa-brands:google-plus-square"
+                  data-inline="false"
+                ></span>
+                Sign in using Google
+              </a>
+              <a
+                href=""
+                class="btn btn-fb w-40 btnn d-flex justify-content-center align-items-center h-100 mb-3 my-lg-0"
+              >
+                <span
+                  class="iconify btn-icons pr-1"
+                  data-icon="entypo-social:facebook"
+                  data-inline="false"
+                ></span>
+                Sign in using Facebook
+              </a>
+            </div>
+            <p class="login-text mt-5">Login to manage your account</p>
+
+            <div class="form-group">
+              <label for="email" class="label">Email</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password" class="label">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control"
+              />
+              <i class="fas fa-eye pa-eye" id="togglePassword"></i>
+            </div>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label rem" for="exampleCheck1"
+                >Remember me</label
+              >
+            </div>
+            <div class="button-wrap d-flex mt-5 justify-content-between">
+              <div class="button col-6 pl-0">
+                <button type="submit" class="btn btn-submit">
+                  Sign In
+                </button>
+              </div>
+              <a href="" class="reset-text mt-3">Forgot Password?</a>
+            </div>
+            <p class="sign-up mt-5 text-center">
+              Don't have an account?
+              <span class="inner-sign"> <a href="">Sign up</a> </span>
+            </p>
+          </form>
+        </div>
+      </section>
+      <!-- left section ends -->
+      <!-- right section starts -->
+      <section class="col-5 content2 section-wrap2 d-none d-md-block">
+        <div class="container mt-17">
+          <div class="right-side mx-auto mt-5">
+            <div class="title d-flex flex-row justify-content-center">
+              <span
+                class="iconify info-icon mt-3"
+                data-icon="ion:information-circle"
+                data-inline="false"
+              ></span>
+              <h1 class="left-title">DID YOU KNOW?</h1>
+            </div>
+            <p class="left-text text-center">
+              There are over 200 Leading influencer marketing platforms for
+              basic campaign and dubious data, Then there is
+              <span class="inner-left-text">WebApp</span>
+            </p>
+            <div class="btn-sign text-center">
+              <button type="submit" class="btn signup-btn btn-submit">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- right section ends -->
+    </div>
+
+    <!-- All javascript at the bottom of the page for fast page load -->
+    <!-- Jquery -->
+    <script src="../../../assets/js/bootstrap-js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../../../assets/js/bootstrap-js/bootstrap.min.js"></script>
+    <!-- iconify -->
+    <script src="https://code.iconify.design/2/2.0.0-beta.3/iconify.min.js"></script>
+    <!-- main JS -->
+    <script src="../../../assets/js/custom-js/login-main.js"></script>
+  </body>
+</html>
