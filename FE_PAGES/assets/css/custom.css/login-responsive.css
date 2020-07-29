@@ -3,38 +3,40 @@
 
 @media all and (min-width:768px) {
   .section-wrap {
-    background-position: left 10% top -13%, left -1% bottom -3%;
-    background-size: 42%, 15%, 35%;
+    background-position: left 10% top 0%, left -1% bottom -3%, right -8px top -1px;
+    background-size: 42%, 15%, 25%;
   }
 
-  .left-title {
-    font-size: 2rem;
-  }
-
-  .left-text {
-    font-size: 1.125rem;
+  /* Signup section */
+  .section-wrap-signup {
+    background-position: left 10% top 0%, left -1% bottom -3%, right 0% top 0px;
   }
 
 }
 
 @media all and (min-width:992px) {
   .section-wrap {
-    background-position: left 70% top -8%, left -1% bottom -3%;
-    background-size: 80%, 15%, 35%;
+    background-position: left 10% top 0%, left -1% bottom -3%, right -8px top -1px;
+
   }
 
-  .section-wrap2 {
-    background-position: right -13% top -104px;
-    background-size: 65%;
+  .section-wrap-signup {
+    background-position: left 10% top 0%, left -1% bottom -3%, right 0% top 0px;
+
   }
 
-  .btnn {
+  .btnn,
+  .btn-submit {
     font-size: 1rem;
   }
 
   .form-title {
     font-size: 3.188rem;
 
+  }
+
+  .form {
+    margin-left: 7rem !important;
   }
 
   .w-40 {
@@ -45,51 +47,38 @@
     font-size: 1.5rem;
   }
 
-  .label {
-    font-size: 1.5rem;
-  }
-
-
-  .rem {
-    font-size: 1.5rem;
-  }
-
-
-  .reset-text {
-    font-size: 1.5rem;
-  }
-
+  .rem,
   .sign-up,
-  .alt {
-    font-size: 1.5rem;
+  .alt,
+  .reset-text,
+  .label {
+    font-size: 1.125rem;
   }
-
-  .left-title {
-    font-size: 2.5rem;
-  }
-
-  .left-text {
-    font-size: 1.75rem;
-  }
-
-
 
 }
 
 @media all and (min-width:1200px) {
-  .section-wrap2 {
-    background-position: right -13% top -150px;
-    background-size: 65%;
+
+  .section-wrap {
+    background-position: left 10% top 0%, left -1% bottom -3%, right -8px top -1px;
+  }
+
+  .section-wrap-signup {
+    background-position: left 10% top 0%, left -1% bottom -3%, right 0% top 0px;
   }
 }
 
+
 @media all and (min-width:2560px) {
   .section-wrap {
-    background-position: left 10% top -13%, left -1% bottom -3%, right -13% top -387px;
-    background-size: 42%, 15%, 35%;
+    background-position: left 10% top 0%, left -1% bottom -3%, right -8px top -1px;
   }
 
   .form-full {
     margin-top: 10rem;
+  }
+
+  .section-wrap-signup {
+    background-position: left 10% top 0%, left -1% bottom -3%, right 0% top 0px;
   }
 }
