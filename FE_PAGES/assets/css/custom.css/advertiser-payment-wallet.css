@@ -8,10 +8,6 @@ aside a:hover {
     text-decoration: none;
 }
 
-.header__link-list-active::after {
-    width: 52px;
-}
-
 header a:hover {
     text-decoration: none;
 }
@@ -70,19 +66,16 @@ header a:hover {
 }
 
 .fund-btn {
-    background-color: #362F74 !important;
+    background-color: #362f74 !important;
     font-size: 18px;
     font-weight: 600;
     padding: 15px 35px;
     margin-top: 41px;
+    border-color: #362f74;
 }
 
-.btn-primary {
-    border-color: #362F74;
-}
-
-.btn-primary:hover {
-    border-color: #362F74;
+.fund-btn:hover {
+    border-color: #362f74;
 }
 
 .transactions-container {
@@ -427,7 +420,7 @@ hr {
     }
     
     .fund-btn {
-        background-color: #362F74 !important;
+        background-color: #362f74 !important;
         font-size: 18px;
         font-weight: 600;
         padding: 15px 35px;
@@ -570,7 +563,7 @@ hr {
     }
     
     .fund-btn {
-        background-color: #362F74 !important;
+        background-color: #362f74 !important;
         font-size: 18px;
         font-weight: 600;
         padding: 15px 35px;
