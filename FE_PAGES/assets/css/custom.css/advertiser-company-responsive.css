@@ -3,25 +3,29 @@
 
 @media all and (min-width:768px) {
   .section-wrap {
-    background-position: left 10% top -13%, left -1% bottom -3%;
-    background-size: 42%, 15%, 35%;
+    background-position: left 10% top 0%, left -1% bottom -14%;
+    background-size: 80%, 40%;
+  }
+
+  .mt-16 {
+    margin-top: 8rem;
   }
 
   .mt-17 {
-    margin-top: 14rem !important;
+    margin-top: 12rem !important;
   }
 
 }
 
 @media all and (min-width:992px) {
   .section-wrap {
-    background-position: left 70% top -8%, left -1% bottom -3%;
-    background-size: 80%, 15%, 35%;
+    background-position: left 70% top 0%, left -1% bottom -14%;
+    background-size: 80%, 40%;
   }
 
   .section-wrap2 {
-    background-position: right -45% top -153px;
-    background-size: 65%;
+    background-position: right 0% top 0px;
+    background-size: 41.6%;
   }
 
   .btnn {
@@ -35,10 +39,6 @@
 
   .w-40 {
     width: 48%;
-  }
-
-  .label {
-    font-size: 1.5rem;
   }
 
   .sign-up {
@@ -59,20 +59,20 @@
 
 @media all and (min-width:1200px) {
   .section-wrap2 {
-    background-position: right -60% top -220px;
-    background-size: 65%;
+    background-position: right 0% top 0px;
+    background-size: 41.6%;
   }
 }
 
 @media all and (min-width:2560px) {
   .section-wrap {
-    background-position: left 10% top -13%, left -1% bottom -3%, right -13% top -387px;
-    background-size: 42%, 15%, 35%;
+    background-position: left 10% top 0%, left -1% bottom -14%;
+    background-size: 80%, 40%;
   }
 
   .section-wrap2 {
-    background-position: right -60% top -411px;
-    background-size: 65%;
+    background-position: right 0% top 0px;
+    background-size: 41.6%;
   }
 
   .mt-17 {
