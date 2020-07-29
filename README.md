@@ -22,6 +22,7 @@
 1. Make sure you place your files in the appropriate folder you are working on.
 
 2. Properly link your CSS and JS files(They should be in an asset folder)
+3. Your pages should be named according to what you are working on e.g login.html login.css e.t.c
 
    
 <hr>
