@@ -10,7 +10,7 @@
 
 4. Add upstream - <code>git remote add upstream https://github.com/Netacci/envatoweb-FE.git (Your forked repo url)</code>
 
-5. Pull updates from the upstream - <code>git pull upstream develop</code>
+5. Pull updates from the upstream - <code>git pull upstream develop-new</code>
 
 6. Create a new branch for the feature you're working on - <code>git checkout -b [Feature]</code>
 
@@ -34,9 +34,9 @@
 
 3. And then commit - <code>git commit -m "Commit Message"</code>
 
-4. Pull upstream to avoid merge conflicts - <code>git pull upstream develop</code>
+4. Pull upstream to avoid merge conflicts - <code>git pull upstream develop-new</code>
 
-5. Push to your forked repo - <code>git push origin develop</code>
+5. Push to your forked repo - <code>git push origin develop-new</code>
 
 6. Go to the repository https://github.com/Netacci/envatoweb-FE.git
 
