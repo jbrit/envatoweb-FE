@@ -448,9 +448,15 @@
                      <input type="month" class="form-control" id="inputdate" placeholder="mm/yy">
                   </div>
                   <div class="form-group  col-6 col-md">
-                     <label for="inputCVV"><span class="text-danger">*</span> CVV Number &nbsp; &#9072;</label>
+                     <label for="inputCVV"><span class="text-danger">*</span> CVV Number &nbsp; <a
+                           class="text-dark q-mark-info" href="#" data-toggle="tooltip"
+                           title="The three digit number at the back of your card">&#9072;</a></label>
                      <input type="password" class="form-control" id="inputCVV" placeholder="***">
                   </div>
+                  <!--tooltip trigger via JS-->
+                  <script>
+                     $('.q-mark-info').tooltip(options)
+                  </script>
                </div>
             </form>
             <button type="submit" class="btn btn-primary btn-block pay-btn my-4">Make Payment</button>
