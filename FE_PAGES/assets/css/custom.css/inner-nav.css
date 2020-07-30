@@ -17,6 +17,10 @@
     color: var(--sideBar-active);
     border-bottom: 3px solid var(--sideBar-active);;
   }
+  
+  .header__link:hover {
+    color: #362F74;
+  }
 
 @media all and (min-width:768px) {
     .big-inner-nav{
