@@ -1,7 +1,11 @@
 :root {
   --sideBar-primary-color: #b9b9b9;
   --sideBar-secondary-color: #f5f6fa;
+<<<<<<< HEAD
+  --sideBar-active: #362f74;  
+=======
   --sideBar-active: #362f74;
+>>>>>>> develop
 }
 
 body {
@@ -25,7 +29,11 @@ body {
 
 /*Small screens*/
 .navbar-light .navbar-toggler-icon {
+<<<<<<< HEAD
+  background-image: url("/FE_PAGES/assets/images/hamburger\ menu.svg");
+=======
   background-image: url("../../images/hamburger\ menu.svg");
+>>>>>>> develop
 }
 
 .navbar-light .navbar-toggler {
