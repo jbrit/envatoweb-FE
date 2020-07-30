@@ -156,7 +156,6 @@ header,
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #fff;
-    transition: all .5s ease;
   }
 
   .nav-link-active::after {
@@ -176,7 +175,6 @@ header,
   .main-content {
     margin-left: 200px;
     background-color: #f5f6fa;
-    transition: all .5s ease;
   }
 
 
