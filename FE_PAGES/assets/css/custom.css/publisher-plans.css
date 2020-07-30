@@ -103,7 +103,7 @@ header a:hover {
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .card .choose {
-        width: 300px;
+        width: 300px !important;
         height: 55px;
         padding-top: 0.8em;
         margin-bottom: 8px;
@@ -113,7 +113,7 @@ header a:hover {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .card .choose {
-        width: 220px;
+        width: 220px !important;
         height: 50px;
         padding-top: 0.5em;
         margin-bottom: 15px;
@@ -129,11 +129,21 @@ header a:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
-    .main-body {
-        margin-left: 150px;
-        padding-right: 30px;
+    .card-deck {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .card-deck .card {
+        margin-bottom: 12px;
+    }
+
+    .card .choose {
+        height: 50px;
+        padding-top: 0.5em;
+        margin-bottom: 15px;
     }
 
 }
