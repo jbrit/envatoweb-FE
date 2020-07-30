@@ -1,5 +1,140 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* variables */
+:root {
+  --primary: #333;
+  --secondary: #362f74;
+  --light: #333333b3;
+  --green: #3bc76a;
+  --gray-shade: #c4c4c480;
+  --gray-tint: #c4c4c4;
+}
+
+/* utility classes */
+.text_primary {
+  color: var(--primary);
+}
+.text_secondary {
+  color: var(--secondary);
+}
+.text_light {
+  color: var(--light);
+}
+.text_smaller {
+  font-size: 0.625rem;
+  line-height: 0.813rem;
+}
+.text_small {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+.text_normal {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.text_large {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #000;
+}
+.text_larger {
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+}
+.text_caption {
+  font-size: 1.25rem;
+  line-height: 1.7rem;
+}
+@media screen and (min-width: 400px) {
+  .text_normal {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .text_large {
+    font-size: 1.125rem;
+    line-height: 1.438rem;
+  }
+  .text_caption {
+    font-size: 1.438rem;
+    line-height: 2.063rem;
+  }
+}
+.bg_secondary {
+  background-color: var(--secondary);
+}
+.bg_shade {
+  background-color: var(--gray-shade);
+}
+.bg_tint {
+  background-color: var(--gray-tint);
+}
+hr {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Main styles */
+.campaign-main {
+  padding: 2rem 1rem 0;
+}
+@media screen and (min-width: 576px) {
+  .campaign-main {
+    padding: 2rem 2rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .campaign-main {
+    padding: 2rem 3.75rem 0;
+  }
+}
+.progress {
+  width: 100%;
+  height: 0.25rem;
+  background-color: #ecf1f5;
+}
+@media screen and (min-width: 576px) {
+  .progress {
+    width: 12.5rem;
+  }
+}
+.progress-bar {
+  background-color: var(--green);
+}
+.page-navigation-btn {
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.form-btn-cancel {
+  background-color: #c4c4c4;
+}
+.form-btn-cancel:active {
+  background-color: #a4a4a4;
+}
+.form-btn-next {
+  background-color: #362f74;
+}
+.form-btn-next:active {
+  background-color: #160f54;
+}
+/* Your styles */
+.progress-bar {
+  /* Change width */
+  width: 0%;
+}
 :root {
   --form-color-secondary: rgba(51, 51, 51, 0.7);
+  --form-control-bgcolor: #f5f6fa;
 }
 * {
   font-family: "Source Sans Pro", sans-serif;
@@ -11,8 +146,11 @@
   color: var(--form-color-secondary);
   line-height: 20px;
 }
+.text-form-secondary {
+  color: var(--form-color-secondary);
+}
 .form-btn {
-  padding: 10px 25px;
+  padding: 15px 35px;
   border-radius: 5px;
   font-weight: 700;
   color: white;
@@ -20,18 +158,7 @@
 .form-btn:focus {
   box-shadow: none;
 }
-.form-btn-cancel {
-  background-color: #c4c4c4;
-}
-.form-btn-cancel:active {
-  background-color: #a4a4a4;
-}
-.form-btn-next {
-  background-color: #f58b11;
-}
-.form-btn-next:active {
-  background-color: #d56b00;
-}
+
 .progress-bar {
   height: 4px;
   border-radius: 2px;
@@ -47,13 +174,27 @@
   font-size: 10px;
   line-height: 13px;
 }
+.f-26 {
+  font-size: 26px;
+}
 .form-control {
-  transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease, background-color 0.5s ease;
+  height: 45px;
+  border-color: rgba(51, 51, 51, 0.7);
+  background-color: var(--form-control-bgcolor);
+  border-radius: 3px;
 }
 .form-control:focus {
   box-shadow: none;
-  border-color: rgba(54, 47, 122, 0.4);
+  border-color: rgba(51, 51, 51, 0.7);
+  /* border-color: rgba(54, 47, 122, 0.4); */
 }
 .form-control.invalid {
   border-color: #dc3545;
+}
+.form-hr {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.required-star {
+  color: #ea001b;
 }
