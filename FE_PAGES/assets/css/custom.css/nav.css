@@ -9,6 +9,9 @@ body {
   font-family: "Source Sans Pro", sans-serif !important;
 }
 
+.main-content{
+  transition: all .5s ease;
+}
 
 .side-bar__name:hover,
 .side-bar__name:active {
