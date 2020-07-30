@@ -15,7 +15,7 @@
     />
     <meta name="keywords" content="" />
     <!-- Website title-->
-    <title>Change Password - Web App</title>
+    <title>Email Sent - WebApp</title>
     <link rel="shortcut icon" href="" type="image/x-icon" />
     <link rel="apple-touch-icon-precomposed" href="" />
     <!-- Google fonts -->
@@ -41,43 +41,40 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5 mx-auto form-container">
-              <form class="form px-5 py-1 pb-4">
+              <form class="form px-4 py-1 pb-4">
                 <h1 class="form-title mt-4 text-center">
-                  New Password
+                  Forgot your Password!
                 </h1>
                 <div class="form-img text-center">
                   <img
-                    src="../../../../assets/images/new-password.svg"
+                    src="../../../../assets/images/email-sent.svg"
                     alt="Icon"
                     class="img-fluid"
                   />
                 </div>
+                <p class="text-center my-3 info-text">
+                  Password reset email sent
+                </p>
 
-                <div class="form-group">
-                  <input
-                    type="password"
-                    name="password"
-                    class="form-control mt-4"
-                    id="password"
-                    aria-describedby="passwordHelp"
-                    placeholder="Password"
-                  />
-                  <i class="fas fa-eye pa-eye" id="togglePassword1"></i>
-                </div>
-                <div class="form-group">
-                  <input
-                    type="password"
-                    name="confirm"
-                    id="confirm"
-                    class="form-control"
-                    placeholder="Confirm Password"
-                  />
-                  <i class="fas fa-eye pa-eye" id="togglePassword2"></i>
+                <div class="message">
+                  <p>
+                    If Johndoe@email.com is associated with an existing account,
+                    you will receive an email with instructions to reset your
+                    password
+                  </p>
+
+                  <p>
+                    If you don’t receive an email from us within 5 minutes,
+                    please check your SPAM folder, still no email?
+                  </p>
                 </div>
 
                 <div class="btn-container text-center mt-5">
-                  <button type="submit" class="btn btn-submit">
-                    Save New Password
+                  <button
+                    type="submit"
+                    class="btn btn-outline-primary btn-outline-submit"
+                  >
+                    Resend Link
                   </button>
                 </div>
               </form>
