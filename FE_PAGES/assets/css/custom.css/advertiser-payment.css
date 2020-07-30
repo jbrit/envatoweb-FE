@@ -4,9 +4,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 .contaner {
-    background-color:#F0F7FF;
     padding: 78px;
-    margin-left: 250px;
 }
 a.header__link {
     text-decoration: none;
@@ -194,7 +192,6 @@ option {
 
 @media (min-width: 991px) and (max-width: 1200px) {
     .contaner {
-        margin-left: 200px;
         padding: 50px;
     }
     header {
