@@ -116,7 +116,6 @@
   row-gap: 20px;
   grid-template-columns: 330px 330px 330px;
   grid-template-rows: 227.5px 227.5px;
-  /* outline: 1px solid black; */
   justify-content: start;
   margin-bottom: 66px;
   width: 1045px;
@@ -668,9 +667,13 @@
   border-radius: 5px;
 }
 
-.dropdown-menu {
-  min-width: 213.38px !important;
+
+@media (min-width: 566px) {
+  .dropdown-menu {
+    min-width: 213.38px !important;
+  }
 }
+
 
 
 @media (max-width: 565px) {
@@ -684,7 +687,8 @@
 
   .dropdown-menu {
     max-width: 100px !important;
-    min-width: 100px;
+    min-width: 100px !important;
+    width: 100px !important;
   }
 
   .dropdown-item {
