@@ -1,4 +1,9 @@
 /* BIG SCREEN INNER PAGE NAV STARTS  */
+
+:root {  /*Declared the CSS variable*/
+  --sideBar-active: #362f74;
+}
+
 .big-inner-nav{
     display: none;
 }
@@ -10,7 +15,7 @@
     font-size: 16px;
     font-weight: 600;
     color: var(--sideBar-active);
-    border-bottom: 3px solid var(--sideBar-active);
+    border-bottom: 3px solid var(--sideBar-active);;
   }
 
 @media all and (min-width:768px) {
