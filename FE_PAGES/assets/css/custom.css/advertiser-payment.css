@@ -4,10 +4,13 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 .contaner {
-    padding: 78px;
+    padding-top: 78px;
 }
 a.header__link {
     text-decoration: none;
+}
+a.header__link:hover {
+    color: #362f74;
 }
 a.sidebar__link {
     text-decoration: none;
@@ -123,7 +126,7 @@ option {
 .tip .tip_text {
     visibility: hidden;
     width: 120px;
-    background-color: #0075FF;
+    background-color: #362f74;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -143,7 +146,7 @@ option {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #0075FF transparent transparent transparent;
+    border-color: #362f74 transparent transparent transparent;
 }
   
 .tip:hover .tip_text {
@@ -151,8 +154,8 @@ option {
 }
 .submit {
     margin-top: 50px;
-    background-color: #0075FF;
-    border: 2px solid #0075FF;
+    background-color: #362f74;
+    border: 2px solid #362f74;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 600;
@@ -161,8 +164,8 @@ option {
     border-radius: 5px;
 }
 .submit:hover {
-    background-color: #0052B3;
-    border: 2px solid #0052B3;
+    background-color: #231e4d;
+    border: 2px solid #231e4d;
     transition: 0.7s all ease-in-out;
 }
 /* Media Queries */
@@ -192,10 +195,9 @@ option {
 
 @media (min-width: 991px) and (max-width: 1200px) {
     .contaner {
-        padding: 50px;
-    }
-    header {
-        margin-left: 50px;
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .main-content {
         margin-left: 150px;
@@ -278,7 +280,6 @@ option {
 @media (min-width: 768px) and (max-width: 987px) {
     .contaner {
         margin-left: 0;
-        padding: 30px;
     }
     p.pub_text {
         font-size: 35px;
@@ -344,10 +345,10 @@ option {
         font-size: 20px;
     }
 }
-@media (max-width: 765px) {
+@media (max-width: 768px) {
     .contaner {
         margin-left: 0;
-        padding: 20px;
+        padding-top: 20px;
     }
     p.pub_text {
         font-size: 25px;
