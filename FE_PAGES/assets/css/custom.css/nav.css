@@ -22,7 +22,7 @@ body {
 
 /*Small screens*/
 .navbar-light .navbar-toggler-icon {
-  background-image: url("../images/hamburger\ menu.svg");
+  background-image: url("../../images/hamburger\ menu.svg");
 }
 
 .navbar-light .navbar-toggler {
@@ -76,6 +76,11 @@ body {
 
 .header,
 .main-content > header {
+  background-color: var(--sideBar-secondary-color);
+}
+
+header, 
+.stickyNav{
   background-color: var(--sideBar-secondary-color);
 }
 
