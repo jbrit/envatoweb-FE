@@ -260,7 +260,7 @@ a:hover{
 
   .main-content {
     margin-left: 200px;
-    background-color: #e5e5e5;
+    background-color: var(--sideBar-secondary-color);
   }
 
   .collapse-sidebar {
