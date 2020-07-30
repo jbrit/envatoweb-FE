@@ -1,7 +1,7 @@
 /* MAIN STYLE SHEET FOR: ENVATO WEB : PUBLISHER OVERVIEW */
 
 :root {
-	--main-font: 'Montserrat', sans-serif;
+	--main-font: sans-serif;
 	--primary-color: #362f74;
 	--background-blue: #f0f7ff;
 	--secondary-blue: #362f74;
@@ -31,6 +31,9 @@ img {
 }
 a:hover {
 	text-decoration: none;
+}
+.col {
+	min-width: auto !important;
 }
 .card {
 	border: none !important;
@@ -114,7 +117,7 @@ a:hover {
 	color: var(--primary-color);
 	margin-bottom: 1rem;
 }
-.social_icon_container div {
+.social_icon_container div{
 	width: 60%;
 }
 .social_icon_container .second_row {
@@ -152,7 +155,7 @@ h6.light_text {
 	transition: all 0.8s;
 }
 .activity_card:hover .card-body .top div {
-	box-shadow: 0 0 0 400px #362f74;
+	box-shadow: 0 0 0 80vw #362f74;
 	transition: all 0.8s;
 }
 .activity_card:hover .card-body .top h4,
@@ -228,10 +231,6 @@ h6.light_text {
 .ct-series-a .ct-slice-donut {
 	/* give the donut slice a custom colour */
 	stroke: #f58b11;
-	/* customize stroke width of the donut slices in CSS. Note that this property is already set in JavaScript and label positioning also relies on this. In the right situation though it can be very useful to style this property. You need to use !important to override the style attribute
-	stroke-width: 5px !important;
-	/* create modern looking rounded donut charts
-	stroke-linecap: round;*/
 }
 .ct-series-b .ct-slice-donut {
 	stroke: #eef2f7;
@@ -239,10 +238,6 @@ h6.light_text {
 .ct-series-a .ct-bar {
 	/* give the donut slice a custom colour */
 	stroke: #362f74;
-	/* customize stroke width of the donut slices in CSS. Note that this property is already set in JavaScript and label positioning also relies on this. In the right situation though it can be very useful to style this property. You need to use !important to override the style attribute
-	stroke-width: 5px !important;
-	/* create modern looking rounded donut charts
-	stroke-linecap: round;*/
 }
 .ct-horizontal {
 	stroke: #4d9dff00;
@@ -309,6 +304,11 @@ h6.light_text {
 		margin-left: 5px;
 	}
 }
+@media screen and (max-width: 900px) {
+	.social_icons {
+		width: 2.5vw !important;
+	}
+}
 @media screen and (max-width: 767px) {
 	.edit {
 		display: none;
@@ -356,6 +356,11 @@ h6.light_text {
 	}
 
 	/* === ACTIVITY Card ===== */
+	
+	.activity_card{
+		box-shadow: none !important;
+	}
+
 	.activity_icon {
 		padding: 1.5rem;
 	}
@@ -411,13 +416,16 @@ h6.light_text {
 		padding-left: 6px !important;
 		padding-right: 6px !important;
 	}*/
+	.activity_col {
+		padding-left: 1px !important;
+		padding-right: 1px !important;
+	}
 }
 @media screen and (max-width: 543px) {
 	#stars {
 		width: 0.5rem !important;
 		margin-top: 0.2rem !important;
 	}
-
 	.img_container {
 		width: 140px !important;
 	}
@@ -445,6 +453,86 @@ h6.light_text {
 	}
 	.middle {
 		margin-bottom: 1.4rem;
+	}
+	.middle h2 {
+		font-size: 1.8rem;
+	}
+	.top_pie,
+	.top_bar,
+	.progress_top {
+		border-bottom: 1px solid #c4c4c4;
+		padding: 0.6rem;
+	}
+
+	.ct-bar {
+		stroke-width: 10px;
+	}
+	.ct-slice-donut {
+		stroke-width: 20px;
+	}
+	.progress {
+		height: 0.3rem !important;
+	}
+}
+@media screen and (max-width: 375px) {
+	#stars {
+		width: 0.3rem !important;
+		margin-top: 0.2rem !important;
+	}
+	.img_container {
+		width: 100px !important;
+	}
+	.main_text {
+		font-size: 3.5rem;
+		line-height: 15px;
+	}
+	.sub_head {
+		font-size: 1rem !important;
+	}
+	.sub_text {
+		font-size: 0.7rem !important;
+	}
+	.mail_link {
+		font-size: 0.7rem;
+	}
+	.card-footer {
+		padding: 2vw;
+	}
+	.card-footer h2 {
+		margin-left: 1rem;
+	}
+	.tags {
+		width: 3.7rem;
+		height: 1.5rem;
+	}
+	.tags p {
+		font-size: 0.5rem;
+	}
+	.light_text {
+		font-size: 0.65rem;
+	}
+	.social_icons {
+		width: 0.8rem !important;
+	}
+	.activity_icon {
+		padding: 1.1rem;
+		width: 23%;
+	}
+	.top h4 {
+		font-size: 0.9rem;
+	}
+	.middle {
+		margin-bottom: 1.1rem;
+	}
+	.middle h2 {
+		font-size: 1.5rem;
+	}
+	.percent,
+	.percent_green {
+		font-size: 0.8rem;
+	}
+	.ct-label.ct-vertical.ct-start {
+		font-size: 0.8rem;
 	}
 	.top_pie,
 	.top_bar,
