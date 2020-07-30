@@ -146,6 +146,13 @@ font-weight: normal;
     fill: #362F74;
 }
 
+.tooltip .tooltip-inner {
+    background-color: #362F74;
+}
+
+.tooltip.bs-tooltip-top .arrow::before {
+    border-top-color: #362F74;
+}
 
 @media (min-width: 576px) {
     tml {
