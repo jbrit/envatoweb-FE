@@ -1,7 +1,7 @@
 :root {
   --sideBar-primary-color: #b9b9b9;
-  --sideBar-secondary-color: #e5e5e5;
-  --sideBar-active: #362f74;  
+  --sideBar-secondary-color: #f5f6fa;
+  --sideBar-active: #362f74;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 
 /*Small screens*/
 .navbar-light .navbar-toggler-icon {
-  background-image: url("../images/hamburger\ menu.svg");
+  background-image: url("../../images/hamburger\ menu.svg");
 }
 
 .navbar-light .navbar-toggler {
@@ -38,7 +38,7 @@ body {
   transition: all .2s linear;
 }
 
-.sidebar > * {
+.sidebar>* {
   padding: 0 20px;
 }
 
@@ -57,8 +57,8 @@ body {
 
 .sidebar__input:focus,
 .sidebar__input:active {
-  border-bottom-color:var(--sideBar-active);
- }
+  border-bottom-color: var(--sideBar-active);
+}
 
 .sidebar__input::placeholder {
   color: var(--sideBar-primary-color);
@@ -75,7 +75,12 @@ body {
 }
 
 .header,
-.main-content > header {
+.main-content>header {
+  background-color: var(--sideBar-secondary-color);
+}
+
+header,
+.stickyNav {
   background-color: var(--sideBar-secondary-color);
 }
 
@@ -124,7 +129,7 @@ body {
   border-radius: 99999px;
   width: 100%;
   background-color: transparent;
-  padding: 3px 10px ;
+  padding: 3px 10px;
   border: none;
   border: 1px solid #b9b9b9;
 }
@@ -145,7 +150,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  
+
   .sidebar {
     width: 200px;
     border-top-right-radius: 20px;
@@ -169,7 +174,7 @@ body {
 
   .main-content {
     margin-left: 200px;
-    background-color: #e5e5e5;
+    background-color: #f5f6fa;
   }
 
 
@@ -182,9 +187,9 @@ body {
     width: 50px;
   }
 
-  
+
   .collapse-sidebar .sidebar__icon-active::after {
-    content:  '';
+    content: '';
     position: absolute;
     width: 15px;
     height: 25px;
@@ -198,7 +203,7 @@ body {
     display: none;
   }
 
-  .collapse-sidebar .sidebar > * {
+  .collapse-sidebar .sidebar>* {
     padding: 0 14px;
   }
 

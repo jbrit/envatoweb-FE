@@ -299,9 +299,6 @@ a:hover{
 
 
 @media all and (min-width:992px) {
-  .sidebar, .main-content {
-    font-size: 18px;
-}
 .sidebar__list-active {
   background-color: #f0f7ff;
   color: var(--fc-secondary);
