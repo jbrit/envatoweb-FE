@@ -23,7 +23,7 @@
 }
 
 .section-wrap {
-  background-image: url(/envatoweb-FE/FE_PAGES/assets/images/Ellipse1.svg), url(/envatoweb-FE/FE_PAGES/assets/images/Ellipse2.svg), url(/envatoweb-FE/FE_PAGES/assets/images/illus.svg);
+  background-image: url(../../images/Ellipse1.svg), url(../../images/Ellipse2.svg), url(../../images/illus.svg);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: left 10% top -1%, left -1% bottom -3%, right -8px top -1px;
   background-size: 56%, 42%, 52%;
@@ -209,7 +209,7 @@ input:-webkit-autofill:active {
 
 /* Signup css */
 .section-wrap-signup {
-  background-image: url(/envatoweb-FE/FE_PAGES/assets/images/Ellipse1.svg), url(/envatoweb-FE/FE_PAGES/assets/images/Ellipse2.svg), url(/envatoweb-FE/FE_PAGES/assets/images/illus-signup.svg);
+  background-image: url(../../images/Ellipse1.svg), url(../../images/Ellipse2.svg), url(../../images/illus-signup.svg);
   background-position: left 10% top -1%, left -1% bottom -3%, right 0% top 0%;
 }
 
