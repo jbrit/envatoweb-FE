@@ -22,7 +22,7 @@ body {
 
 /*Small screens*/
 .navbar-light .navbar-toggler-icon {
-  background-image: url("../images/hamburger\ menu.svg");
+  background-image: url("/FE_PAGES/assets/images/hamburger\ menu.svg");
 }
 
 .navbar-light .navbar-toggler {

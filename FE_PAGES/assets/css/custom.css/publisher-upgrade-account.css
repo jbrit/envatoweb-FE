@@ -1,0 +1,221 @@
+/*style sheet for the contents in the upgrade account page*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+
+/*html {
+    font-size: .75rem;
+}*/
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #F0F7FF;
+}
+
+
+.side-bar {
+    background-color: #362F74;
+}
+
+.pricing {  
+    text-align: center;
+    padding-left: 5.556vw;
+    padding-right: 5.556vw;
+    /*resolves responsiveness issue after navbar integrations*/
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.pricing-heading {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.pricing-heading__detail {
+    font-size: 18px;
+}
+
+.card-body h2, .payment-option h2 {
+    font-size: 4.831vw;
+    font-weight: 600;
+}
+
+.card-body p {
+    font-size: 14px;
+}
+
+.card {
+    box-shadow: 0.812121px 1.62424px 16.2424px rgba(0, 117, 255, 0.1);
+    border-radius: 5px;
+    border: none;
+}
+
+.standard-acc-header {
+    background-color: #362F74;
+    color: white;
+}
+
+.premium-acc-header {
+    background-color: #F58B11;
+    color: white;
+}
+
+.pricing__fee {
+    font-size: 7.729vw;
+    color: #0075FF;
+}
+
+.premium-acc__check {
+    fill: #219653 !important;
+}
+
+.payment-option {
+    background-color: white;
+    box-shadow: 0.81px 1.62px 16.24px rgba(0, 117, 255, 0.1);
+    border-radius: 5px;
+}
+
+.form-container {
+    background-color: white;
+
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.form-control::placeholder,
+ .bootstrap-select>.dropdown-toggle.bs-placeholder { /*.bootstrap-select>.dropdown-toggle.bs-placeholder styles the placeholder for the dropdown in the bootstrap-select plugin*/
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+.bootstrap-select>.dropdown-toggle:after { /*styles the dropdown angle icon in the bootstrap-select plugin*/
+    color: black;
+    font-size: 20px;
+}
+
+.form-group {
+    text-align: left;
+    font-weight: 600;
+}
+
+.btn-light { /*Account type dropdown*/
+    border: 0.404823px solid #BDBDBD;
+    border-radius: 0px;
+    height: 37px;
+    background-color: white;
+}
+
+.btn-light:hover { /*Account type dropdown*/
+    background-color: white;
+}
+
+.pay-btn {
+    background-color: #362F74;
+    border-radius: 5px;
+    height: 68px;
+}
+
+.pay-btn:hover, .pay-btn:active, .pay-btn:not(:disabled):not(.disabled):active, .pay-btn:focus {
+    color: #fff;
+    background-color: #362F74;
+    border-color: #362F74;
+}
+
+.form__search-input {
+    border: 1.5px solid #BDBDBD;
+    border-radius: 59px;
+    background-color: transparent;
+    width: 364px;
+}
+
+.mobile-search__input::placeholder {
+font-style: italic;
+font-size: 13px;
+color: #E0E0E0;
+font-weight: normal;
+}
+
+.card-body__info svg {
+    width: 8vw;
+    fill: #362F74;
+}
+
+
+@media (min-width: 576px) {
+    tml {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    tml {
+        font-size: 1rem;
+    }
+
+    .card-body h2 {
+        font-size: 32px;
+        font-weight: normal;
+    }
+
+    .payment-option h2 {
+        font-size: 32px;
+        text-align: left;
+    }
+    
+    .form-group {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 992px) {
+    tml {
+        font-size: 1rem;
+    }
+    
+    .card {
+        border-radius: 0px;
+    }
+
+    .pricing-heading {
+        font-weight: 600;
+        font-size: 3.611vw;
+    }
+    
+    .pricing-heading__detail {
+        font-size: 1.806vw;
+    }
+
+    .pricing__fee {
+        font-size: 52px;
+        color: #0075FF;
+    }
+
+    .form-group {
+        font-size: 21px;
+    }
+
+    .pay-btn {
+        height: 100px;
+        font-size: 24px;
+    }
+
+   
+}
+
+@media (min-width: 1200px) {
+    tml {
+        font-size: 1rem;
+    }
+
+    .form-group {
+        font-size: 26px;
+    }
+
+   
+}
