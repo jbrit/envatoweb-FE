@@ -362,7 +362,6 @@ h6.light_text {
 	}
 	.activity_card:hover .card-body .top div {
 		box-shadow: 0 0 0 80vw #362f74;
-		transition: all 0.8s;
 	}
 	.activity_icon {
 		padding: 1.5rem;
