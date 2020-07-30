@@ -1,42 +1,14 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-
-:root{
-  --ff-primary: 'Source Sans Pro', sans-serif;
-  --fc-secondary:  #362F74;
-  --fc-tertiary: black;
-  --clr-form: #BDBDBD;
+:root {
   --sideBar-primary-color: #b9b9b9;
-  --sideBar-secondary-color: #f5f6fa;
+  --sideBar-secondary-color: #e5e5e5;
   --sideBar-active: #362f74;  
-  --clr-bg-desktop: #D5F5E2;
-  --clr-bg: #ffffff;
-  --clr-hover:  #0052B3;
-  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),  0.125em 0.125em 0.25em rgba(0,0,0,.15);
-
-}
-html{
-  scroll-behavior: smooth;
-}
-body{
-  font-family: var(--ff-primary);
-  background-color: var(--sideBar-secondary-color);
-  transition: ease-in 0.5s all;
 }
 
+body {
+  background-color: #F5F6FA;
+  font-family: "Source Sans Pro", sans-serif !important;
+}
 
-a{
-  color: black;
-  text-decoration: none;
-}
-a:hover{
-  color: var(--fc-secondary);
-  text-decoration: none;
-}
 
 .side-bar__name:hover,
 .side-bar__name:active {
@@ -50,7 +22,7 @@ a:hover{
 
 /*Small screens*/
 .navbar-light .navbar-toggler-icon {
-  background-image: url("../../images/hamburger\ menu.svg");
+  background-image: url("../../images/advertiser-dashboard-small-nav-icon.svg") !important;
 }
 
 .navbar-light .navbar-toggler {
@@ -100,11 +72,6 @@ a:hover{
 /* Active state */
 .icon-active {
   fill: var(--sideBar-active);
-}
-
-.header,
-.main-content > header {
-  background-color: var(--sideBar-secondary-color);
 }
 
 .nav-link-active {
@@ -168,73 +135,76 @@ a:hover{
   transform: translateY(-50%);
 }
 
-#withdrawal-form{
-  background-color: var(--clr-bg);
-}
-
-.withdraw-form-control{
- border-radius: 0;
- border: 1px solid var(--clr-form);
- color: var(--clr-form);
-}
-.withdraw-form-control:focus-within{
- color: var(--fc-secondary);
-}
-
-.inner-btn{
-  position: relative;
-}
-
-.inner-btn button{
-  position: absolute;
-  right: 5%;
-  top: 10%;
-  background-color: transparent;
-  border: none;
-  color: var(--fc-secondary);
-  padding: 0.2rem 0.5rem;
-  transition: ease 0.5s all;
-}
-.inner-btn button:hover{
-  background-color: var(--clr-hover);
-  color: var(--clr-bg);
-  border-radius: 5px;
-  
-
-}
-
-#withdraw-now-btn{
-  background-color: var(--fc-secondary);
-  border-radius: 5px;
-  transition: ease 0.5s all;
-  border: none;
-}
-#withdraw-now-btn:hover{
-  background-color: var(--clr-hover);
-  box-shadow: var(--bs);
-}
-.required{
-  font-weight: 600;
-}
-.required:before {
-  content:"*";
-  color: red;
-}
-
-.sidebar {
-  background-color: var(--fc-secondary);
-}
-
-.header__link-list-active::after {
-  border-bottom: 4px solid var(--fc-secondary);
-}
-
-/* FOOTER STARTS  */
 .footer-link {
   color: #362f74;
 }
 
-/* MEDIA QUERIES  */
+.dashboard-nav-customise a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 42px;
+  letter-spacing: 0.1px;
+  color: #333333;
+}
+
+.dashboard-nav-customise .active {
+  position: relative;
+}
+
+.dashboard-nav-customise .active:after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #362f74;
+  position: absolute;
+}
+
+.dashboard-nav-customise .active a {
+  font-style: normal;
+  font-weight: 600;
+  color: #362f74;
+}
+
+.dashboard-nav-customise a:hover {
+  font-weight: 600;
+}
+
+nav {
+  background-color: #F5F6FA;
+}
+
+.main-content {
+  background-color: #F5F6FA !important;
+}
+
+.nav-icon {
+  cursor: pointer;
+}
+
+.big-inner-nav{
+  display: none;
+}
+.header__link {
+  color: #000;
+  font-size: 16px;
+}
+.header__link-active {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--sideBar-active);
+  border-bottom: 3px solid var(--sideBar-active);
+}
+
+@media all and (min-width:768px) {
+  .big-inner-nav{
+    display: block;
+  } 
+}
+
+
 @media (min-width: 768px) {
   
   .sidebar {
@@ -254,13 +224,13 @@ a:hover{
   }
 
   .container-custom {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 
   .main-content {
     margin-left: 200px;
-    background-color: var(--sideBar-secondary-color);
+    background-color: #F5F6FA;
   }
 
   .collapse-sidebar {
@@ -295,27 +265,4 @@ a:hover{
   .collapse-sidebar .main-content {
     margin-left: 50px;
   }
-}
-
-
-@media all and (min-width:992px) {
-.sidebar__list-active {
-  background-color: #f0f7ff;
-  color: var(--fc-secondary);
-}
-     
-}
-
-@media all and (min-width:1200px) {
-  :root{
-    --fs-label: 19px;
-    --fs-input: 18px;
-  
-  }
-  .required{
-    font-size: var(--fs-label);
-  }
-  .withdraw-form-control{
-    font-size: var(--fs-input);
-   }
 }
