@@ -1,14 +1,42 @@
-:root {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --fc-secondary:  #362F74;
+  --fc-tertiary: black;
+  --clr-form: #BDBDBD;
   --sideBar-primary-color: #b9b9b9;
   --sideBar-secondary-color: #f5f6fa;
-  --sideBar-active: #362f74;
-}
+  --sideBar-active: #362f74;  
+  --clr-bg-desktop: #D5F5E2;
+  --clr-bg: #ffffff;
+  --clr-hover:  #0052B3;
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),  0.125em 0.125em 0.25em rgba(0,0,0,.15);
 
-body {
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: var(--ff-primary);
   background-color: var(--sideBar-secondary-color);
-  font-family: "Source Sans Pro", sans-serif !important;
+  transition: ease-in 0.5s all;
 }
 
+
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: var(--fc-secondary);
+  text-decoration: none;
+}
 
 .side-bar__name:hover,
 .side-bar__name:active {
@@ -38,7 +66,7 @@ body {
   transition: all .2s linear;
 }
 
-.sidebar>* {
+.sidebar > * {
   padding: 0 20px;
 }
 
@@ -57,8 +85,8 @@ body {
 
 .sidebar__input:focus,
 .sidebar__input:active {
-  border-bottom-color: var(--sideBar-active);
-}
+  border-bottom-color:var(--sideBar-active);
+ }
 
 .sidebar__input::placeholder {
   color: var(--sideBar-primary-color);
@@ -75,12 +103,7 @@ body {
 }
 
 .header,
-.main-content>header {
-  background-color: var(--sideBar-secondary-color);
-}
-
-header,
-.stickyNav {
+.main-content > header {
   background-color: var(--sideBar-secondary-color);
 }
 
@@ -129,7 +152,7 @@ header,
   border-radius: 99999px;
   width: 100%;
   background-color: transparent;
-  padding: 3px 10px;
+  padding: 3px 10px ;
   border: none;
   border: 1px solid #b9b9b9;
 }
@@ -145,12 +168,75 @@ header,
   transform: translateY(-50%);
 }
 
+#withdrawal-form{
+  background-color: var(--clr-bg);
+}
+
+.withdraw-form-control{
+ border-radius: 0;
+ border: 1px solid var(--clr-form);
+ color: var(--clr-form);
+}
+.withdraw-form-control:focus-within{
+ color: var(--fc-secondary);
+}
+
+.inner-btn{
+  position: relative;
+}
+
+.inner-btn button{
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  background-color: transparent;
+  border: none;
+  color: var(--fc-secondary);
+  padding: 0.2rem 0.5rem;
+  transition: ease 0.5s all;
+}
+.inner-btn button:hover{
+  background-color: var(--clr-hover);
+  color: var(--clr-bg);
+  border-radius: 5px;
+  
+
+}
+
+#withdraw-now-btn{
+  background-color: var(--fc-secondary);
+  border-radius: 5px;
+  transition: ease 0.5s all;
+  border: none;
+}
+#withdraw-now-btn:hover{
+  background-color: var(--clr-hover);
+  box-shadow: var(--bs);
+}
+.required{
+  font-weight: 600;
+}
+.required:before {
+  content:"*";
+  color: red;
+}
+
+.sidebar {
+  background-color: var(--fc-secondary);
+}
+
+.header__link-list-active::after {
+  border-bottom: 4px solid var(--fc-secondary);
+}
+
+/* FOOTER STARTS  */
 .footer-link {
   color: #362f74;
 }
 
+/* MEDIA QUERIES  */
 @media (min-width: 768px) {
-
+  
   .sidebar {
     width: 200px;
     border-top-right-radius: 20px;
@@ -174,9 +260,8 @@ header,
 
   .main-content {
     margin-left: 200px;
-    background-color: #f5f6fa;
+    background-color: var(--sideBar-secondary-color);
   }
-
 
   .collapse-sidebar {
     overflow-x: hidden;
@@ -187,9 +272,9 @@ header,
     width: 50px;
   }
 
-
+  
   .collapse-sidebar .sidebar__icon-active::after {
-    content: '';
+    content:  '';
     position: absolute;
     width: 15px;
     height: 25px;
@@ -203,11 +288,37 @@ header,
     display: none;
   }
 
-  .collapse-sidebar .sidebar>* {
+  .collapse-sidebar .sidebar > * {
     padding: 0 14px;
   }
 
   .collapse-sidebar .main-content {
     margin-left: 50px;
   }
+}
+
+
+@media all and (min-width:992px) {
+  .sidebar, .main-content {
+    font-size: 18px;
+}
+.sidebar__list-active {
+  background-color: #f0f7ff;
+  color: var(--fc-secondary);
+}
+     
+}
+
+@media all and (min-width:1200px) {
+  :root{
+    --fs-label: 19px;
+    --fs-input: 18px;
+  
+  }
+  .required{
+    font-size: var(--fs-label);
+  }
+  .withdraw-form-control{
+    font-size: var(--fs-input);
+   }
 }
