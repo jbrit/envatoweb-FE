@@ -1,6 +1,6 @@
 :root {
   --sideBar-primary-color: #b9b9b9;
-  --sideBar-secondary-color: #F5F6FA;
+  --sideBar-secondary-color: #f5f6fa;
   --sideBar-active: #362f74;  
 }
 
@@ -76,6 +76,11 @@ body {
 
 .header,
 .main-content > header {
+  background-color: var(--sideBar-secondary-color);
+}
+
+header, 
+.stickyNav{
   background-color: var(--sideBar-secondary-color);
 }
 
@@ -169,7 +174,7 @@ body {
 
   .main-content {
     margin-left: 200px;
-    background-color: #F5F6FA;
+    background-color: #f5f6fa;
   }
 
 
