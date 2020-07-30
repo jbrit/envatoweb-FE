@@ -6,7 +6,7 @@ const isValidField = (field, type = "text") => {
   return true;
 };
 const updateProgressBars = (percent = 10) => {
-  const progressBar = document.querySelector(".inner-progress-bar");
+  const progressBar = document.querySelector(".progress-bar");
   const progressPercent = document.querySelector(".progress-percent");
   var valid = Array.from(formFields).reduce(
     (acc, field) => acc + 0 + isValidField(field, field.type),
