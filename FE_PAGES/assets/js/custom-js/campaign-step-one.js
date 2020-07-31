@@ -5,7 +5,7 @@ const isValidField = (field, type = "text") => {
     return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(field.value);
   return true;
 };
-const updateProgressBars = (percent = 10) => {
+const updateProgressBars = (percent = 100) => {
   const progressBar = document.querySelector(".progress-bar");
   const progressPercent = document.querySelector(".progress-percent");
   var valid = Array.from(formFields).reduce(
