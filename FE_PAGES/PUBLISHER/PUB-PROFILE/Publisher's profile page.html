@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="../../assets/css/custom.css/hover-min.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/custom.css/publisher's profile-campaign.css" />
+    <link rel="stylesheet" href="../../assets/css/custom.css/nav.css">
+    <!-- <link rel="stylesheet" href="../../assets/css/custom.css/inner-nav.css"> -->
+
+    <title>Publisher's profile page(campaign)</title>
+  </head>
+  <body class="collapse-sidebar">
+    <div class="container-fluid">
+      
+      <aside class="sidebar position-fixed h-100 position-relative d-none d-md-block">
+        <a class="navbar-brand" href="#"><img class="img-fluid aside-logo logo mt-xl" src="../../assets/images/GetViral.svg" alt=""></a>
+        <ul class="sidebar__lists list-unstyled">
+              <li class="py-2 py-xl-3 my-3 d-flex align-items-center"><span class="sidebar__icon pr-3"><svg class="dashboard-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.84769 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.84769 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.84769 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z" fill="#B5B5B5"/>
+                 <path d="M19.762 18.6122L15.1007 13.9509C14.7831 13.6333 14.2687 13.6333 13.9511 13.9509C13.6335 14.2683 13.6335 14.7832 13.9511 15.1005L18.6124 19.7618C18.7711 19.9206 18.979 20 19.1872 20C19.395 20 19.6031 19.9206 19.762 19.7618C20.0796 19.4444 20.0796 18.9295 19.762 18.6122Z" fill="#B5B5B5"/>
+                 </span><input class="sidebar__input side-bar__name mb-0 hvr-grow" placeholder="Search" ></li>
+              <li class="my-4 py-2 py-xl-3 my-3 d-flex align-items-center"><span class="sidebar__icon sidebar__icon-active"><svg class="dashboard-icon icon-active" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M4 13h6c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1zm0 8h6c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1zm10 0h6c.55 0 1-.45 1-1v-8c0-.55-.45-1-1-1h-6c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1zM13 4v4c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1h-6c-.55 0-1 .45-1 1z"/></svg></span><a href="#" class="pl-3 side-bar__name sidebar__link sidebar__link-active nav-link-active mb-0 ">Dashboard</a></li>
+              <li class="my-4 py-2 py-xl-3 my-3 d-flex align-items-center">
+                 <span class="sidebar__icon"><svg xmlns="http://www.w3.org/2000/svg" class="dashboard-icon" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M10 4h10a1 1 0 0 1 0 2H10a1 1 0 1 1 0-2zm0 7h10a1 1 0 0 1 0 2H10a1 1 0 0 1 0-2zm0 7h10a1 1 0 0 1 0 2H10a1 1 0 0 1 0-2zM5 7a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0 7a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0 7a2 2 0 1 1 0-4a2 2 0 0 1 0 4z"/></svg></span><a href="#" class="sidebar__link pl-3 side-bar__name mb-0 hvr-grow">Publisher List</a></li>
+              <li class="my-4 py-2 py-xl-3 my-3 d-flex align-items-center"><span class="sidebar__icon"><svg xmlns="http://www.w3.org/2000/svg" class="dashboard-icon" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M95.5 104h320a87.73 87.73 0 0 1 11.18.71a66 66 0 0 0-77.51-55.56L86 94.08h-.3a66 66 0 0 0-41.07 26.13A87.57 87.57 0 0 1 95.5 104z"/><path d="M415.5 128h-320a64.07 64.07 0 0 0-64 64v192a64.07 64.07 0 0 0 64 64h320a64.07 64.07 0 0 0 64-64V192a64.07 64.07 0 0 0-64-64zM368 320a32 32 0 1 1 32-32a32 32 0 0 1-32 32z"/><path d="M32 259.5V160c0-21.67 12-58 53.65-65.87C121 87.5 156 87.5 156 87.5s23 16 4 16s-18.5 24.5 0 24.5s0 23.5 0 23.5L85.5 236z"/></svg></span><a href="#" class="sidebar__link pl-3 side-bar__name mb-0 hvr-grow">Wallet</a></li>
+              <li class="my-4 py-2 py-xl-3 my-3 d-flex align-items-center"><span class="sidebar__icon"><svg xmlns="http://www.w3.org/2000/svg" class="dashboard-icon" aria-hidden="true" focusable="false" viewBox="0 0 1070 1000"><path d="M1070 938q0 21-2 63H1q0-10-.5-31T0 938q0-30 1-37q12-49 64-84.5t111.5-53t125.5-47t97-65.5q17-22 17-38q0-22-11-73q-4-21-10.5-36.5t-16-33T363 439q-15-35-33-132q-6-38-6-75q0-105 53.5-168T535 1t157.5 63T746 232q0 31-7 75q-14 89-32 132q-6 14-15.5 31.5t-16 33T665 540q-11 51-11 73q0 18 17 38q31 36 97 65.5t125 47t111 53t64 84.5q2 8 2 37z"/></svg></span><a href="#" class="sidebar__link pl-3 side-bar__name mb-0 hvr-grow">Account</a></li>
+        </ul>
+           <li class="sidebar__link--sign-out position-absolute mx-auto py-2 py-xl-3 my-3 d-flex align-items-center sidebar__sign-out"><span class="sidebar__icon"><svg xmlns="http://www.w3.org/2000/svg" class="dashboard-icon sign-icon" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5l-5-5"/><path d="M21 12H9"/></g></svg></span><a href="#" class="sidebar__link pl-3 side-bar__name side-bar__sign-out mb-0">Sign out</a></li>
+     </aside>
+     <!-- Small screens -->
+     <header class="d-md-none header sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light navbar-bg-custom">
+           <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="img-fluid logo" src="../../assets/images/GetViral.svg" alt=""></a>
+              <button class="navbar-toggler px-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon hvr-grow"></span>
+              </button>
+           </div>
+           <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="container-fluid">
+                 <div class="row">
+                    <ul class="navbar-nav ml-auto">
+                       <li class="nav-item py-1 d-flex align-items-center">
+                          <!--FIXME: USE 'icon-active' ON SVG ICON TO MAKE IT ACTIVE-->
+                          <!--FIXME: USE 'nav-link-active' ON link (a) tag TO MAKE IT ACTIVE-->
+                          <svg class="pr-3 dashboard-icon icon-active" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M4 13h6c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1zm0 8h6c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1zm10 0h6c.55 0 1-.45 1-1v-8c0-.55-.45-1-1-1h-6c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1zM13 4v4c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1h-6c-.55 0-1 .45-1 1z"/></svg>
+                       <a class="nav-link nav-link-active" href="#">Dashboard</a>
+                      
+                       </li>
+
+                       
+                       <li class="nav-item py-1 d-flex align-items-center active">
+                        <svg class="pr-3 dashboard-icon icon-active" viewBox="0 0 20 20">
+                          <path d="M8.627,7.885C8.499,8.388,7.873,8.101,8.13,8.177L4.12,7.143c-0.218-0.057-0.351-0.28-0.293-0.498c0.057-0.218,0.279-0.351,0.497-0.294l4.011,1.037C8.552,7.444,8.685,7.667,8.627,7.885 M8.334,10.123L4.323,9.086C4.105,9.031,3.883,9.162,3.826,9.38C3.769,9.598,3.901,9.82,4.12,9.877l4.01,1.037c-0.262-0.062,0.373,0.192,0.497-0.294C8.685,10.401,8.552,10.18,8.334,10.123 M7.131,12.507L4.323,11.78c-0.218-0.057-0.44,0.076-0.497,0.295c-0.057,0.218,0.075,0.439,0.293,0.495l2.809,0.726c-0.265-0.062,0.37,0.193,0.495-0.293C7.48,12.784,7.35,12.562,7.131,12.507M18.159,3.677v10.701c0,0.186-0.126,0.348-0.306,0.393l-7.755,1.948c-0.07,0.016-0.134,0.016-0.204,0l-7.748-1.948c-0.179-0.045-0.306-0.207-0.306-0.393V3.677c0-0.267,0.249-0.461,0.509-0.396l7.646,1.921l7.654-1.921C17.91,3.216,18.159,3.41,18.159,3.677 M9.589,5.939L2.656,4.203v9.857l6.933,1.737V5.939z M17.344,4.203l-6.939,1.736v9.859l6.939-1.737V4.203z M16.168,6.645c-0.058-0.218-0.279-0.351-0.498-0.294l-4.011,1.037c-0.218,0.057-0.351,0.28-0.293,0.498c0.128,0.503,0.755,0.216,0.498,0.292l4.009-1.034C16.092,7.085,16.225,6.863,16.168,6.645 M16.168,9.38c-0.058-0.218-0.279-0.349-0.498-0.294l-4.011,1.036c-0.218,0.057-0.351,0.279-0.293,0.498c0.124,0.486,0.759,0.232,0.498,0.294l4.009-1.037C16.092,9.82,16.225,9.598,16.168,9.38 M14.963,12.385c-0.055-0.219-0.276-0.35-0.495-0.294l-2.809,0.726c-0.218,0.056-0.351,0.279-0.293,0.496c0.127,0.506,0.755,0.218,0.498,0.293l2.807-0.723C14.89,12.825,15.021,12.603,14.963,12.385"></path>
+                        </svg>
+                        <a
+                        class="nav-link hvr-bounce-in text-muted nav-link-active"
+                        href="../PUB-PROFILE/Publisher's profile page.html"
+                        >Campaigns</a
+                      >
+                      </li>
+
+                       <li class="nav-item py-1 d-flex align-items-center">
+                        <svg class="svg-icon pr-3 dashboard-icon" viewBox="0 0 20 20">
+                          <path d="M16.469,8.924l-2.414,2.413c-0.156,0.156-0.408,0.156-0.564,0c-0.156-0.155-0.156-0.408,0-0.563l2.414-2.414c1.175-1.175,1.175-3.087,0-4.262c-0.57-0.569-1.326-0.883-2.132-0.883s-1.562,0.313-2.132,0.883L9.227,6.511c-1.175,1.175-1.175,3.087,0,4.263c0.288,0.288,0.624,0.511,0.997,0.662c0.204,0.083,0.303,0.315,0.22,0.52c-0.171,0.422-0.643,0.17-0.52,0.22c-0.473-0.191-0.898-0.474-1.262-0.838c-1.487-1.485-1.487-3.904,0-5.391l2.414-2.413c0.72-0.72,1.678-1.117,2.696-1.117s1.976,0.396,2.696,1.117C17.955,5.02,17.955,7.438,16.469,8.924 M10.076,7.825c-0.205-0.083-0.437,0.016-0.52,0.22c-0.083,0.205,0.016,0.437,0.22,0.52c0.374,0.151,0.709,0.374,0.997,0.662c1.176,1.176,1.176,3.088,0,4.263l-2.414,2.413c-0.569,0.569-1.326,0.883-2.131,0.883s-1.562-0.313-2.132-0.883c-1.175-1.175-1.175-3.087,0-4.262L6.51,9.227c0.156-0.155,0.156-0.408,0-0.564c-0.156-0.156-0.408-0.156-0.564,0l-2.414,2.414c-1.487,1.485-1.487,3.904,0,5.391c0.72,0.72,1.678,1.116,2.696,1.116s1.976-0.396,2.696-1.116l2.414-2.413c1.487-1.486,1.487-3.905,0-5.392C10.974,8.298,10.55,8.017,10.076,7.825"></path>
+                        </svg>
+                        <a
+                        class="nav-link hvr-bounce-in text-muted"
+                        href="#"
+                        > Overview</a
+                      >
+                    
+                       <li class="nav-item py-1 d-flex align-items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="pr-3 dashboard-icon" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M10 4h10a1 1 0 0 1 0 2H10a1 1 0 1 1 0-2zm0 7h10a1 1 0 0 1 0 2H10a1 1 0 0 1 0-2zm0 7h10a1 1 0 0 1 0 2H10a1 1 0 0 1 0-2zM5 7a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0 7a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0 7a2 2 0 1 1 0-4a2 2 0 0 1 0 4z"/></svg>
+                       <a class="nav-link" href="#">Publisher list</a>
+                       </li>
+                       <li class="nav-item py-1 d-flex align-items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="pr-3 dashboard-icon" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M95.5 104h320a87.73 87.73 0 0 1 11.18.71a66 66 0 0 0-77.51-55.56L86 94.08h-.3a66 66 0 0 0-41.07 26.13A87.57 87.57 0 0 1 95.5 104z"/><path d="M415.5 128h-320a64.07 64.07 0 0 0-64 64v192a64.07 64.07 0 0 0 64 64h320a64.07 64.07 0 0 0 64-64V192a64.07 64.07 0 0 0-64-64zM368 320a32 32 0 1 1 32-32a32 32 0 0 1-32 32z"/><path d="M32 259.5V160c0-21.67 12-58 53.65-65.87C121 87.5 156 87.5 156 87.5s23 16 4 16s-18.5 24.5 0 24.5s0 23.5 0 23.5L85.5 236z"/></svg>
+                       <a class="nav-link" href="#">Wallet</a>
+                       </li>
+                       <li class="nav-item py-1 d-flex align-items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="pr-3 dashboard-icon" aria-hidden="true" focusable="false" viewBox="0 0 1070 1000"><path d="M1070 938q0 21-2 63H1q0-10-.5-31T0 938q0-30 1-37q12-49 64-84.5t111.5-53t125.5-47t97-65.5q17-22 17-38q0-22-11-73q-4-21-10.5-36.5t-16-33T363 439q-15-35-33-132q-6-38-6-75q0-105 53.5-168T535 1t157.5 63T746 232q0 31-7 75q-14 89-32 132q-6 14-15.5 31.5t-16 33T665 540q-11 51-11 73q0 18 17 38q31 36 97 65.5t125 47t111 53t64 84.5q2 8 2 37z"/></svg>
+                       <a class="nav-link" href="#">Account</a>
+                       </li>
+                       <li class="nav-item py-1 d-flex align-items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="pr-3 dashboard-icon sign-icon" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5l-5-5"/><path d="M21 12H9"/></g></svg>
+                       <a class="nav-link" href="#">Sign Out</a>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </nav>
+     </header>
+     </div>
+
+     <main class="main-content">
+        <!-- Big screens -->
+        <header class="sticky-top">
+           <nav class="position-relative py-md-3">
+              <div class="container-fluid container-custom">
+                 <div class="d-flex justify-content-between align-items-center">
+                    <!-- Close button -->
+                    <button class="hamburger-button d-none d-md-block" id="close-sidebar">
+                       <svg class="hamburger-menu" viewBox="0 0 37 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M35.3571 20H1.30952C0.962216 20 0.629134 20.1317 0.383551 20.3661C0.137967 20.6005 0 20.9185 0 21.25L0 23.75C0 24.0815 0.137967 24.3995 0.383551 24.6339C0.629134 24.8683 0.962216 25 1.30952 25H35.3571C35.7044 25 36.0375 24.8683 36.2831 24.6339C36.5287 24.3995 36.6667 24.0815 36.6667 23.75V21.25C36.6667 20.9185 36.5287 20.6005 36.2831 20.3661C36.0375 20.1317 35.7044 20 35.3571 20ZM25.3571 10H1.30952C0.962216 10 0.629134 10.1317 0.383551 10.3661C0.137967 10.6005 0 10.9185 0 11.25L0 13.75C0 14.0815 0.137967 14.3995 0.383551 14.6339C0.629134 14.8683 0.962216 15 1.30952 15H25.3571C25.7045 15 26.0375 14.8683 26.2831 14.6339C26.5287 14.3995 26.6667 14.0815 26.6667 13.75V11.25C26.6667 10.9185 26.5287 10.6005 26.2831 10.3661C26.0375 10.1317 25.7045 10 25.3571 10ZM35.3571 0H1.30952C0.962216 0 0.629134 0.131696 0.383551 0.366116C0.137967 0.600537 0 0.918479 0 1.25L0 3.75C0 4.08152 0.137967 4.39946 0.383551 4.63388C0.629134 4.8683 0.962216 5 1.30952 5H35.3571C35.7044 5 36.0375 4.8683 36.2831 4.63388C36.5287 4.39946 36.6667 4.08152 36.6667 3.75V1.25C36.6667 0.918479 36.5287 0.600537 36.2831 0.366116C36.0375 0.131696 35.7044 0 35.3571 0Z" fill="#362F74"/>
+                          </svg>                        
+                    </button>
+                    <!-- Open button -->
+                    <button class="hamburger-button d-none" id="open-sidebar">
+                       <svg class="hamburger-menu"  width="37" height="25" viewBox="0 0 37 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.30936 20H35.357C35.7043 20 36.0374 20.1317 36.283 20.3661C36.5285 20.6005 36.6665 20.9185 36.6665 21.25V23.75C36.6665 24.0815 36.5285 24.3995 36.283 24.6339C36.0374 24.8683 35.7043 25 35.357 25H1.30936C0.962055 25 0.628971 24.8683 0.383389 24.6339C0.137806 24.3995 -0.000164032 24.0815 -0.000164032 23.75V21.25C-0.000164032 20.9185 0.137806 20.6005 0.383389 20.3661C0.628971 20.1317 0.962055 20 1.30936 20ZM11.3094 10H35.357C35.7043 10 36.0374 10.1317 36.283 10.3661C36.5285 10.6005 36.6665 10.9185 36.6665 11.25V13.75C36.6665 14.0815 36.5285 14.3995 36.283 14.6339C36.0374 14.8683 35.7043 15 35.357 15H11.3094C10.9621 15 10.629 14.8683 10.3834 14.6339C10.1378 14.3995 9.99984 14.0815 9.99984 13.75V11.25C9.99984 10.9185 10.1378 10.6005 10.3834 10.3661C10.629 10.1317 10.9621 10 11.3094 10ZM1.30936 0H35.357C35.7043 0 36.0374 0.131696 36.283 0.366116C36.5285 0.600537 36.6665 0.918479 36.6665 1.25V3.75C36.6665 4.08152 36.5285 4.39946 36.283 4.63388C36.0374 4.8683 35.7043 5 35.357 5H1.30936C0.962055 5 0.628971 4.8683 0.383389 4.63388C0.137806 4.39946 -0.000164032 4.08152 -0.000164032 3.75V1.25C-0.000164032 0.918479 0.137806 0.600537 0.383389 0.366116C0.628971 0.131696 0.962055 0 1.30936 0Z" fill="#362F74"/>
+                          </svg>                                              
+                    </button>
+
+                      <!-- BIG SCREEN INNER PAGE NAV STARTS  -->
+            <!-- <div class="mr-auto ml-5 big-inner-nav">
+              <ul class="list-unstyled d-flex align-items-center justify-content-between mb-0">
+                <li><a class="header__link mr-3" href="index.html">Wallet</a></li>
+                <li class="header__link mr-3"><a class="header__link" href="plans.html">Plans</a>
+                </li>
+                <li><a class="header__link-list-active  header__link-active" href="#">Withdrawal</a></li>
+              </ul>
+            </div> -->
+            <!-- BIG SCREEN INNER PAGE NAV ENDS  -->
+
+
+                    <div class="custom-links">
+                      <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container">
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav mx-auto flex-nav">
+                              <a
+                              class="nav-item nav-link mr-5 nav-font hvr-bounce-in"
+                              href="#"
+                              >Overview</a
+                            >
+                              <a
+                                class="nav-item nav-link mr-5 nav-font hvr-bounce-in active"
+                                href="../PUB-PROFILE/Publisher's profile page.html"
+                                >Campaigns</a
+                              >
+                              <a
+                                class="nav-item nav-link mr-5 position-relative hvr-bounce-in hvr-icon-pulse"
+                                href="#"
+                              >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="search-bar"
+                                  placeholder="Search payment history"
+                                />
+                                <i class="fa fa-search search-icon ml-5"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+
+                    <div class="d-none d-md-block">
+                       <div class="d-flex justify-content-end align-items-center">
+                          <img class="img-fluid profile-picture pr-2 hvr-grow" src="../../assets/images/profile picture.svg" alt="">
+                          <strong class="text-dark">Irish Kelvin</strong>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </nav>
+        </header>
+        <section class="container-fluid container-custom">
+           <!-- Small screens search bar -->
+           <form class="d-md-none mobile-search my-2">
+              <input type="text" class="mobile-search__input" placeholder="search">
+              <svg class="dashboard-icon mobile-search__icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.84769 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.84769 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.84769 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z" fill="#B5B5B5"/>
+                 <path d="M19.762 18.6122L15.1007 13.9509C14.7831 13.6333 14.2687 13.6333 13.9511 13.9509C13.6335 14.2683 13.6335 14.7832 13.9511 15.1005L18.6124 19.7618C18.7711 19.9206 18.979 20 19.1872 20C19.395 20 19.6031 19.9206 19.762 19.7618C20.0796 19.4444 20.0796 18.9295 19.762 18.6122Z" fill="#B5B5B5"/>
+           </form>
+
+
+    <!-- Main Section -->
+    <section id="main-section" class="main-content" class="mb-5">
+      <div class="container">
+        <div class="box shadow mt-4">
+          <div class="row">
+            <div class="col-md-9 col-lg-9">
+              <div class="row">
+                <div class="col-md-2 col-lg-2">
+                  <img src="../../assets/images/nigga2.png" class="image-responsive hvr-grow" alt="" />
+                </div>
+                <div class="col-md-10 col-lg-10">
+                  <h3 class="primary-font-color">Irish Kelvin</h3>
+                  <div class="d-flex">
+                    <p class="text-muted">Social Media Influencer</p>
+                    <span class="ml-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa fa-map-marker-alt mr-2 mt-1"></i>
+                    <p class="text-muted">234 Lake side Melbourne Russia</p>
+                  </div>
+                  <span>
+                    <span class="commerce mr-2 hvr-pulse">Commerce</span>
+                    <span class="tech mr-2 hvr-pulse">Tech</span>
+                    <span class="health mr-2 hvr-pulse">Health</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="contact">
+                <a href="#" class="mail-link">desmondchuks@hmail.com</a>
+                <p class="text-muted mt-2 number">049439494444</p>
+                <a href="#" class="btn btn-primary mt-4 hvr-grow edit-btn"
+                  >Edit Profile</a
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h4 class="primary-font-color">
+            <strong>Campaigning History</strong>
+          </h4>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-4 col-lg-4 hvr-grow mt">
+            <div class="box-2 shadow">
+              <p class="invitations font-weight-bold poppins-font">
+                Invitations
+              </p>
+              <h5 class="text-muted pull-left"><strong>12</strong></h5>
+              <a href="#" class="lead green-view pull-right hvr-pulse">View</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 hvr-grow mt">
+            <div class="box-2 shadow">
+              <p class="finished font-weight-bold poppins-font">Finished</p>
+              <h5 class="text-muted pull-left"><strong>64</strong></h5>
+              <a href="#" class="lead green-view pull-right hvr-pulse">View</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 hvr-grow mt">
+            <div class="box-2 shadow">
+              <p class="accepted font-weight-bold poppins-font">Accepted</p>
+              <h5 class="text-muted pull-left"><strong>35</strong></h5>
+              <a href="#" class="lead green-view pull-right hvr-pulse">View</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 mt-4 hvr-grow">
+            <div class="box-2-active shadow">
+              <p class="active-box font-weight-bold poppins-font">Active</p>
+              <h5 class="text-active-box pull-left"><strong>12</strong></h5>
+              <a href="#" class="lead green-view-active pull-right hvr-pulse"
+                >View</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 mt-4 hvr-grow">
+            <div class="box-2 shadow">
+              <p class="pending font-weight-bold poppins-font">Pending</p>
+              <h5 class="text-muted pull-left"><strong>27</strong></h5>
+              <a href="#" class="lead green-view pull-right hvr-pulse">View</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 mt-4 hvr-grow">
+            <div class="box-2 shadow">
+              <p class="declined font-weight-bold poppins-font">Declined</p>
+              <h5 class="text-muted pull-left"><strong>2</strong></h5>
+              <a href="#" class="lead green-view pull-right hvr-pulse">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="box-3 shadow">
+          <div class="row">
+            <div class="col-md-1 col-lg-1 hvr-grow">
+              <img src="../../assets/images/coke.png" class="image-responsive" alt="" />
+            </div>
+
+            <div class="col-md-11 col-lg-11">
+              <i class="fab primary-font-color fa-2x fa-instagram-square pull-right hvr-pulse-grow"></i>
+              <h4 class="text-muted font-weight-bold">
+                Cocacola Promo Video Post
+              </h4>
+              <div class="flexed-post primary-font-color">
+                <div class="d-flex mr-5">
+                  <p class="mr-3">Start Date:</p>
+                  <p>June 10, 2020</p>
+                </div>
+                <div class="d-flex">
+                  <p class="mr-3">End Date:</p>
+                  <p>August 10, 2000</p>
+                </div>
+              </div>
+
+              <div class="flexed-post primary-font-color">
+                <div class="d-flex mr-5">
+                  <p class="mr-3">Impressions:</p>
+                  <p class="pending">2,347,444</p>
+                </div>
+                <div class="d-flex ml-3 ml-sm">
+                  <p class="mr-3">Targeted Impressions:</p>
+                  <p class="pending">4,000,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          
+          <div class="relative">
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-4">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">170K</h3>
+                <p class="poppins-font text-muted text-center">Total Reach</p>
+              </div>
+              <div class="col-6 col-md-4 col-lg-4">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">165K</h3>
+                <p class="poppins-font text-muted text-center">Total Views</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-sm-3">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">125K</h3>
+                <p class="poppins-font text-muted text-center">Total Clicks</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-3">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">35K</h3>
+                <p class="poppins-font text-muted text-center">Engagements</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-3">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">35K</h3>
+                <p class="poppins-font text-muted text-center">Conversion</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-3">
+              </div>
+
+              <div class="chart-icon">
+                <img src="../../assets/images/Group 157.png" class="ml-5 chart-image" alt=""><span class="mt-5 green-view"><i class="fa fa-arrow-up hvr-pulse-grow"></i> 75%</span>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container mt-5 mb-5">
+        <div class="box-3 shadow">
+          <div class="row">
+            <div class="col-md-1 col-lg-1 hvr-grow">
+              <img src="../../assets/images/hotelsNG.png" class="image-responsive" alt="" />
+            </div>
+
+            <div class="col-md-11 col-lg-11">
+              <i class="fab primary-font-color fa-2x fa-twitter-square pull-right hvr-pulse-grow"></i>
+              <h4 class="text-muted font-weight-bold">
+                Hotels.NG Internship Ad Post
+              </h4>
+              <div class="flexed-post primary-font-color">
+                <div class="d-flex mr-5">
+                  <p class="mr-3">Start Date:</p>
+                  <p>June 10, 2020</p>
+                </div>
+                <div class="d-flex">
+                  <p class="mr-3">End Date:</p>
+                  <p>August 10, 2000</p>
+                </div>
+              </div>
+
+              <div class="flexed-post primary-font-color">
+                <div class="d-flex mr-5">
+                  <p class="mr-3">Impressions:</p>
+                  <p class="pending">2,347,444</p>
+                </div>
+                <div class="d-flex ml-3 ml-sm">
+                  <p class="mr-3">Targeted Impressions:</p>
+                  <p class="pending">4,000,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          
+          <div class="relative">
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-4">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">15K</h3>
+                <p class="poppins-font text-muted text-center">Total Reach</p>
+              </div>
+              <div class="col-6 col-md-4 col-lg-4">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">75K</h3>
+                <p class="poppins-font text-muted text-center">Total Views</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-sm-3">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">87K</h3>
+                <p class="poppins-font text-muted text-center">Total Clicks</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-3">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">9K</h3>
+                <p class="poppins-font text-muted text-center">Engagements</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-3">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">5K</h3>
+                <p class="poppins-font text-muted text-center">Conversion</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-3">
+              </div>
+
+              <div class="chart-icon">
+                <img src="../../assets/images/Group 158.png" class="ml-5 chart-image" alt=""><span class="mt-5 red"><i class="fa fa-arrow-down hvr-pulse-grow"></i> 3.5%</span>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="container mt-5 mb-5">
+        <div class="box-3 shadow">
+          <div class="row">
+            <div class="col-md-1 col-lg-1 hvr-grow">
+              <img src="../../assets/images/hotelsNG.png" class="image-responsive" alt="" />
+            </div>
+
+            <div class="col-md-11 col-lg-11">
+              <i class="fab primary-font-color fa-2x fa-twitter-square pull-right hvr-pulse-grow"></i>
+              <h4 class="text-muted font-weight-bold">
+                Hotels.NG Internship Ad Post
+              </h4>
+              <div class="flexed-post primary-font-color">
+                <div class="d-flex mr-5">
+                  <p class="mr-3">Start Date:</p>
+                  <p>June 10, 2020</p>
+                </div>
+                <div class="d-flex">
+                  <p class="mr-3">End Date:</p>
+                  <p>August 10, 2000</p>
+                </div>
+              </div>
+
+              <div class="flexed-post primary-font-color">
+                <div class="d-flex mr-5">
+                  <p class="mr-3">Impressions:</p>
+                  <p class="pending">2,347,444</p>
+                </div>
+                <div class="d-flex ml-3 ml-sm">
+                  <p class="mr-3">Targeted Impressions:</p>
+                  <p class="pending">4,000,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          
+          <div class="relative">
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-4">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">15K</h3>
+                <p class="poppins-font text-muted text-center">Total Reach</p>
+              </div>
+              <div class="col-6 col-md-4 col-lg-4">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">75K</h3>
+                <p class="poppins-font text-muted text-center">Total Views</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-sm-3">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">87K</h3>
+                <p class="poppins-font text-muted text-center">Total Clicks</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-3">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">9K</h3>
+                <p class="poppins-font text-muted text-center">Engagements</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-3">
+                <h3 class="text-muted font-weight-bold text-center poppins-font">5K</h3>
+                <p class="poppins-font text-muted text-center">Conversion</p>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4 mt-3">
+              </div>
+
+              <div class="chart-icon">
+                <img src="../../assets/images/Group 158.png" class="ml-5 chart-image" alt=""><span class="mt-5 red"><i class="fa fa-arrow-down hvr-pulse-grow"></i> 3.5%</span>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../assets/js/custom-js/nav.js"></script>
+  </body>
+</html>
