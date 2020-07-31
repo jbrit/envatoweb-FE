@@ -1,7 +1,7 @@
 /** ROOT STYLES **/
 :root
 	{
-		--accentColor:	#0075FF;
+		--accentColor:	#362F74;
 		--accentColor2: #219653;
 		--accentColor3: #FF8801;
 		--cardFooterColor: rgba(58, 58, 58, 0.5);
@@ -43,36 +43,6 @@
 		}
 
 /** HEADER AREA **/
-	/*.page-title
-		{
-			font-size: 20px;
-			line-height: 42px;
-			letter-spacing: 0.1px;
-			border-bottom: 4px solid #0075FF;
-			width: fit-content;
-		}*/
-
-	.top-search
-		{
-			background: transparent;
-			background-image: url('../../images/search.svg');
-		    background-position: 97% 50%;
-		    background-repeat: no-repeat;
-		    width: 100%;
-		    padding: 13px 29px;
-			border-radius: 59px;
-			border: 1.5px solid #BDBDBD;
-		}
-
-	.top-search::placeholder
-		{
-		    font-family: 'Poppins', sans-serif;
-		    font-size: 13px;
-		    line-height: 19px;
-		    color: #E0E0E0;
-		    font-style: italic;
-		}
-
 	.user-name
 		{
 			font-weight: 600;
@@ -158,7 +128,7 @@
 	.vvip
 		{
 			right: 0;
-			background-color: var(--accentColor2);
+			background-color: var(--accentColor);
 		}
 
 	.card-social-icon
@@ -169,6 +139,54 @@
 			bottom: 45%;
 			left: 5%;
 		}
+
+	.chat-icon
+		{
+			fill: var(--accentColor);
+			height: 30px;
+			width: 30px;
+			transform: scale(-1, 1);
+		}
+
+	/** SHOW PUBLISHERS SOCIAL ICONS ON HOVER **/
+	@media only screen and (min-width: 1024px)
+	{
+		.card-social-icon
+			{
+				display: none;
+			}
+
+		.card:hover .card-social-icon
+			{
+				display: block;
+				animation: zoom .5s 0s alternate;
+				-webkit-animation: zoom .5s 0s alternate;
+			}
+
+			@-webkit-keyframes zoom
+			{
+			    0% 
+			    { 
+			    	transform: scale(0.7); 
+			    }
+			    100% 
+			    { 
+			    	transform: scale(1); 
+			    }
+			}
+
+			@keyframes zoom
+			{
+			    0% 
+			    { 
+			    	transform: scale(0.7); 
+			    }
+			    100% 
+			    { 
+			    	transform: scale(1); 
+			    }
+			}
+	}
 
 	.card-svg 
 		{
@@ -203,11 +221,83 @@
 			fill: var(--accentColor3);
 		}
 
+/** RESPONSIVENESS **/
+	@media only screen and (max-width: 1120px)
+		{
+			.icon-two
+				{
+					left: 28%;
+				}
+
+			.icon-three
+				{
+					left: 51%;
+				}	
+		}
+
+	@media only screen and (max-width: 450px)
+		{
+			.icon-two
+				{
+					left: 18%;
+				}
+
+			.icon-three
+				{
+					left: 31%;
+				}	
+		}
+
+	@media only screen and (max-width: 420px)
+		{
+			.icon-two
+				{
+					left: 21%;
+				}
+
+			.icon-three
+				{
+					left: 37%;
+				}	
+		}
+
+	@media only screen and (min-width: 420px) and (max-width: 500px)
+		{
+			.card-social-icon
+				{
+					bottom: 44%;
+				}
+		}
+
+	@media only screen and (min-width: 501px) and (max-width: 537px)
+		{
+			.card-social-icon
+				{
+					bottom: 40%;
+				}
+		}
+
+	@media only screen and (min-width: 538px) and (max-width: 767px)
+		{
+			.card-social-icon
+				{
+					bottom: 38%;
+				}
+		}
+
+	@media only screen and (min-width: 768px) and (max-width: 820px)
+		{
+			.card-social-icon
+				{
+					bottom: 48%;
+				}
+		}
+
 	@media only screen and (min-width: 992px) and (max-width: 1092px)
 		{
 			.card-social-icon
 				{
-					bottom: 59%;
+					bottom: 54%;
 				}
 		}
 
@@ -218,6 +308,7 @@
 					top: 35%;
 				}
 		}
+
 
 	@media only screen and (min-width: 1131px) and (max-width: 1214px)
 		{
@@ -235,17 +326,101 @@
 				}
 		}
 
+	@media only screen and (max-width: 450px)
+		{
+			.card-social-icon
+				{
+					width: 40px;
+				    height: 40px;
+				}
+		}
+
+	@media only screen and (max-width: 415px)
+		{
+			.card-social-icon
+				{
+					bottom: 48%;
+				}
+		}
+
 	@media only screen and (max-width: 360px)
 		{
 			.card-social-icon
 				{
-					top: 165px;
+					top: 41%;
+				}
+
+			.icon-two
+				{
+					left: 21%;
+				}
+
+			.icon-three
+				{
+					left: 37%;
+				}
+
+			.tiny-screen-space-1
+				{
+					margin-right: 5rem !important;
+				}
+
+			.tiny-screen-space-2
+				{
+					margin-left: 0 !important;
+				}
+		}
+
+	@media only screen and (max-width: 340px)
+		{
+			.card-social-icon
+				{
+					top: 200px;
+				}
+		}
+
+	@media only screen and (max-width: 332px)
+		{
+			.card-social-icon
+				{
+					top: 190px;
+				}
+		}
+
+	@media only screen and (max-width: 320px)
+		{
+			.card-social-icon
+				{
+					top: 35%;
+				}
+		}
+
+	@media only screen and (max-width: 300px)
+		{
+			.card-social-icon
+				{
+					top: 30%;
+				}
+
+			.icon-two
+				{
+					left: 25%;
+				}
+
+			.icon-three
+				{
+					left: 45%;
 				}
 		}
 
 /** PAGINATION STYLES **/
-	.accentColor .page-link:hover
+	.accentColor .page-link:hover, .page-item.active .page-link
 		{
 			background-color: var(--accentColor);
 			color: white;
+		}
+
+	.page-item.active .page-link
+		{
+			border: var(--accentColor);
 		}
