@@ -153,6 +153,7 @@ hr{
 }
 select:required:invalid {
     color: #666;
+    font-size: 13.5px;
   }
   option[value=""][disabled] {
     display: none;
